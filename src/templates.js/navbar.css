@@ -1,0 +1,148 @@
+.nav__links {
+  background: rgba(0, 0, 0, 0.3);
+  width: auto;
+  padding: 0.7rem 0.2rem;
+  z-index: 2;
+  display: grid;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+  transition: var(--transition);
+}
+
+.nav__links:hover {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+.nav__links a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--light-color);
+  font-size: 1.1rem;
+}
+
+.nav__links a:hover {
+  /* background: rgba(0, 0, 0, 0.3); */
+  transform: translateX(10%);
+}
+
+.nav__links a.active {
+  background: var(--primary-variant-color);
+  color: var(--text-white);
+  transform: translateX(50%);
+}
+
+.hide__nav {
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #fff;
+  border-radius: 50%;
+
+  background: var(--bg-color);
+  margin-bottom: 0.4rem;
+}
+
+.hide__nav:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--bg-color);
+}
+
+.hide__nav svg {
+  margin-top: 0.2rem;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  left: 3.5%;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.aside__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.aside__socials a svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__links {
+    display: flex;
+    justify-content: center;
+    bottom: 100%;
+    top: 2rem;
+    padding: 0.9rem;
+    gap: 7%;
+    width: 95%;
+  }
+
+  .nav__links a svg {
+    height: 2rem;
+    width: 2rem;
+  }
+  .nav__links:active {
+    transform: translateY(10%);
+  }
+  .nav__links a.active {
+    transform: translateY(50%);
+  }
+  .sidebar {
+    margin-top: 1rem;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    left: 0%;
+  }
+  .aside__socials {
+    flex-direction: row;
+    margin-top: 0rem;
+    margin-left: 1rem;
+    gap: 2rem;
+  }
+  .hide__nav {
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  .aside__socials {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav__links a {
+    padding: 0.3rem 0.3em;
+  }
+
+  .nav__links a svg {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+
+  .nav__links button {
+    padding: 2rem;
+    background: red;
+  }
+  .aside__socials {
+    display: none;
+  }
+
+  .hide__nav {
+    margin-right: 0rem;
+  }
+}

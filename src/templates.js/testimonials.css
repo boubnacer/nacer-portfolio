@@ -1,0 +1,95 @@
+.tests__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  width: 60%;
+}
+
+.user__avatar {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid var(--primary-variant-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__avatar img {
+  height: 100%;
+}
+
+.testimonial {
+  width: 100%;
+  background: var(--bg-variant-color);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+  user-select: none;
+}
+
+.user__review {
+  color: var(--light-color);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+/* ------------------ */
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  height: 1rem;
+  width: 1rem;
+  margin: 2rem 0;
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translateX(-50%); /*left: calc(50%-11rem)*/
+}
+
+.arrow__btn {
+  cursor: pointer;
+  background: transparent;
+}
+
+.arrow__btn svg {
+  width: 4em;
+  height: 4em;
+  color: var(--primary-color);
+}
+
+.arrow__btn svg:hover {
+  /* background: transparent; */
+  color: #fff;
+}
+
+.circles div {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: var(--bg-variant-color);
+}
+
+.circles div.active {
+  background: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .container.tests__container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container.tests__container {
+    width: var(--sm-container-width);
+  }
+  .user__review {
+    width: var(--sm-container-width);
+  }
+}

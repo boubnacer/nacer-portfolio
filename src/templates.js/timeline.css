@@ -1,0 +1,44 @@
+#timeline h1 {
+  text-align: center;
+}
+
+#description {
+  color: var(--light-color) !important;
+}
+
+.title {
+  color: #fff !important;
+}
+
+.location {
+  color: var(--primary-color) !important;
+}
+
+.vertical-timeline-element-content {
+  background: var(--bg-variant-color) !important;
+  -webkit-box-shadow: 0 !important;
+  box-shadow: none !important;
+}
+.vertical-timeline-element-icon svg {
+  fill: var(--bg-variant-color) !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid var(--bg-variant-color) !important;
+}
+
+.vertical-timeline.vertical-timeline--two-columns:before {
+  background: var(--primary-color) !important;
+}
+
+.vertical-timeline-element-icon {
+  -webkit-box-shadow: 0 0 0 4px var(--bg-variant-color),
+    inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%) !important;
+  /* box-shadow: 0 !important; */
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 90%;
+  }
+}

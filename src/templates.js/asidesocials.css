@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show__nav {
+  display: none;
+}
+
+.show_style {
+  cursor: pointer;
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 50%;
+  background: var(--bg-color);
+}
+
+.show_style:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--bg-color);
+}
+
+.show_style svg {
+  padding-left: 0.1rem;
+  padding-top: 0.3rem;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: row;
+  }
+}
