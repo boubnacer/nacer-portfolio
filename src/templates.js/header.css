@@ -38,8 +38,8 @@
   left: 62%;
   top: 1.5rem;
   transform: translateX(-50%);
-
-  border: 2px solid var(--light-color);
+  background: var(--primary-variant-color);
+  /* border: 2px solid var(--light-color); */
   border-radius: 50%;
   width: 65%;
 }
