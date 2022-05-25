@@ -51,12 +51,6 @@ const Services = () => {
               </h2>
               <p>Eclipse</p>
             </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Sublime Text 3</p>
-            </li>
 
             <li>
               <h2 className="service__list-icon">
