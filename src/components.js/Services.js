@@ -71,14 +71,14 @@ const Services = () => {
               <h2 className="service__list-icon">
                 <HiOutlineBadgeCheck />
               </h2>
-              <p>JavaScript | Redux & NodeJs/ExpressJs</p>
+              <p>JavaScript & NodeJs/ExpressJs</p>
             </li>
 
             <li>
               <h2 className="service__list-icon">
                 <HiOutlineBadgeCheck />
               </h2>
-              <p>ReactJs & VueJs</p>
+              <p>ReactJs | Redux & VueJs</p>
             </li>
 
             <li>
