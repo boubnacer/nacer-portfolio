@@ -91,7 +91,7 @@ const Services = () => {
               <h2 className="service__list-icon">
                 <HiOutlineBadgeCheck />
               </h2>
-              <p>HTML5/CSS3, SASS, Bootstrap and TailwindCss</p>
+              <p>HTML5/CSS3, Axios, SASS, Bootstrap and TailwindCss</p>
             </li>
             <li>
               <h2 className="service__list-icon">
