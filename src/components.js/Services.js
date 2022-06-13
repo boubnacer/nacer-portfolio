@@ -78,7 +78,7 @@ const Services = () => {
               <h2 className="service__list-icon">
                 <HiOutlineBadgeCheck />
               </h2>
-              <p>ReactJs | Redux & VueJs</p>
+              <p>ReactJs | Redux/Redux Toolkit & VueJs</p>
             </li>
 
             <li>
