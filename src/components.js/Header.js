@@ -11,7 +11,7 @@ const Header = () => {
           <img className="me_img" src={me} alt="me" />
         </div>
         <div className="container header__details">
-          <h1>Boubkraoui Nacer</h1>
+          <h1>Boubkraoui</h1>
           <h5 className="text-light">Fullstack Web Developer</h5>
           <div className="contact-cv__btns">
             <a href={Resume} className="btn" download>
