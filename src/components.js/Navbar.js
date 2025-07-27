@@ -9,6 +9,29 @@ import AsideSocials from "./AsideSocials";
 const Navbar = () => {
   const [activeClass, setActiveClass] = useState("#");
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 200;
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute("id");
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveClass(`#${sectionId}`);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav>
       <div className="sidebar">
