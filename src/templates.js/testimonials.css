@@ -67,7 +67,7 @@
 
 .arrow__btn svg:hover {
   /* background: transparent; */
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .circles div {

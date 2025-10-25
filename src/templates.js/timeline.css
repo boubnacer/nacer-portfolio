@@ -7,7 +7,7 @@
 }
 
 .title {
-  color: #fff !important;
+  color: var(--white-color) !important;
 }
 
 .location {
@@ -21,7 +21,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
 }
 .vertical-timeline-element-icon svg {
-  fill: var(--bg-variant-color) !important;
+  fill: #ffffff !important;
 }
 
 .vertical-timeline-element-content-arrow {

@@ -85,14 +85,14 @@
   border-radius: var(--radius-lg);
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  color: var(--white-color);
-  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
   transition: var(--transition-normal);
 }
 
 .skill__card:hover .skill__icon {
   transform: rotate(5deg) scale(1.1);
-  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.4);
 }
 
 /* Card Title */

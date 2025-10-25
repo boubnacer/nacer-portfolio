@@ -44,15 +44,15 @@
 
 .contact-cv__btns .btn:first-child:hover {
   background: var(--primary-color);
-  color: var(--white-color);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
 }
 
 .contact-cv__btns .btn:last-child {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   border: 1px solid transparent;
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .me {

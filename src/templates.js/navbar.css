@@ -33,7 +33,7 @@
 
 .nav__links a.active {
   background: var(--primary-variant-color);
-  color: var(--text-white);
+  color: var(--primary-color);
   transform: translateX(50%);
 }
 

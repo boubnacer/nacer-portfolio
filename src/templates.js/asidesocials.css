@@ -12,14 +12,16 @@ main {
 .show_style {
   cursor: pointer;
   padding: 0.6rem;
-  color: #fff;
+  color: var(--white-color);
   border-radius: 50%;
   background: var(--bg-color);
+  border: 1px solid var(--border-color);
 }
 
 .show_style:hover {
-  background: rgba(0, 0, 0, 0.3);
-  border: 2px solid var(--bg-color);
+  background: var(--primary-color);
+  color: var(--bg-color);
+  border: 1px solid var(--primary-color);
 }
 
 .show_style svg {
