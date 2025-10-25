@@ -6,10 +6,16 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="footer__socials">
-        {footerSocials.map((social) => {
+        {footerSocials.map((social, index) => {
+          const iconClasses = [
+            'icon-linkedin',
+            'icon-facebook',
+            'icon-github',
+            'icon-x'
+          ];
           return (
             <div key={social.id}>
-              <a href={social.link} target="_blank">
+              <a href={social.link} target="_blank" className={iconClasses[index]}>
                 <div>{social.icon}</div>
               </a>
             </div>

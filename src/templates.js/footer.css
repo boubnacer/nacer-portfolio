@@ -33,21 +33,21 @@ footer a {
   transition: var(--transition-normal);
 }
 
-/* Footer social icon colors - targeting based on order in footerSocials array */
-.footer__socials a:nth-child(1) svg {
+/* Footer social icon colors */
+.footer__socials .icon-linkedin svg {
   color: #0A66C2; /* LinkedIn blue */
 }
 
-.footer__socials a:nth-child(2) svg {
+.footer__socials .icon-facebook svg {
   color: #1877F2; /* Facebook blue */
 }
 
-.footer__socials a:nth-child(3) svg {
+.footer__socials .icon-github svg {
   color: #333; /* GitHub black */
 }
 
-.footer__socials a:nth-child(4) svg {
-  color: #1DA1F2; /* Twitter blue */
+.footer__socials .icon-x svg {
+  color: #000000; /* X (formerly Twitter) black */
 }
 
 .footer__socials a:hover {
