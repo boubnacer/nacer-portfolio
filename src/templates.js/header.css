@@ -1,8 +1,7 @@
 .header__container {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   min-height: 100vh;
   padding-top: 1rem;
   gap: 2rem;
@@ -84,7 +83,7 @@
 /* ----------------MEDIA QUERIES md */
 @media screen and (max-width: 1024px) {
   .header__container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
     gap: var(--spacing-xl);
     padding-top: 6rem;
