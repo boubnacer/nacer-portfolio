@@ -29,6 +29,21 @@
 
 .contact__icon {
   font-size: 1.5rem;
+  transition: var(--transition-normal);
+}
+
+/* Email icon color */
+.contact:nth-child(1) .contact__icon {
+  color: #EA4335; /* Gmail red */
+}
+
+/* WhatsApp icon color */
+.contact:nth-child(2) .contact__icon {
+  color: #25D366; /* WhatsApp green */
+}
+
+.contact:hover .contact__icon {
+  transform: scale(1.1);
 }
 
 .contact h2 {

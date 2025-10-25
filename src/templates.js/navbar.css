@@ -81,6 +81,29 @@
 .aside__socials a svg {
   height: 1.5rem;
   width: 1.5rem;
+  transition: var(--transition-normal);
+}
+
+/* Social icon colors - targeting based on order in socials array */
+.aside__socials a:nth-child(1) svg {
+  color: #0A66C2; /* LinkedIn blue */
+}
+
+.aside__socials a:nth-child(2) svg {
+  color: #1877F2; /* Facebook blue */
+}
+
+.aside__socials a:nth-child(3) svg {
+  color: #333; /* GitHub black */
+}
+
+.aside__socials a:nth-child(4) svg {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.aside__socials a:hover svg {
+  transform: scale(1.15);
+  filter: brightness(1.2);
 }
 
 @media screen and (max-width: 1024px) {
