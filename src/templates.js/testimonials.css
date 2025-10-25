@@ -23,10 +23,12 @@
 .testimonial {
   width: 100%;
   background: var(--bg-variant-color);
+  border: 1px solid var(--border-color);
   text-align: center;
   padding: 2rem;
   border-radius: 2rem;
   user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .user__review {
@@ -70,13 +72,15 @@
 
 .circles div {
   padding: 0.5rem;
-  border: 1px solid transparent;
+  border: 1px solid var(--border-color);
   border-radius: 50%;
   background: var(--bg-variant-color);
+  transition: var(--transition-normal);
 }
 
 .circles div.active {
   background: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 @media screen and (max-width: 1024px) {

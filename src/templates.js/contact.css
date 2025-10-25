@@ -53,10 +53,18 @@ textarea {
   width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  background: transparent;
-  border: 2px solid var(--primary-variant-color);
+  background: var(--bg-card);
+  border: 2px solid var(--border-color);
   resize: none;
   color: var(--white-color);
+  transition: var(--transition-normal);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary-variant-color);
 }
 
 /* ----------------MEDIA QUERIES md */

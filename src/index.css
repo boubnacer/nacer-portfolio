@@ -11,18 +11,18 @@
 }
 
 :root {
-  /* Modern Color Palette */
-  --bg-color: #0a0a0a;
-  --bg-variant-color: #1a1a1a;
-  --bg-card: #111111;
-  --primary-color: #3b82f6;
-  --primary-variant-color: rgba(59, 130, 246, 0.1);
-  --secondary-color: #8b5cf6;
-  --accent-color: #06b6d4;
-  --white-color: #ffffff;
-  --light-color: #a1a1aa;
-  --text-muted: #71717a;
-  --border-color: #27272a;
+  /* Professional White & Blue Color Palette */
+  --bg-color: #ffffff;
+  --bg-variant-color: #f8fafc;
+  --bg-card: #ffffff;
+  --primary-color: #2563eb;
+  --primary-variant-color: rgba(37, 99, 235, 0.1);
+  --secondary-color: #1d4ed8;
+  --accent-color: #3b82f6;
+  --white-color: #1f2937;
+  --light-color: #4b5563;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
   --success-color: #10b981;
   --warning-color: #f59e0b;
   
@@ -70,7 +70,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-color);
+  background: var(--bg-variant-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -79,7 +79,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--light-color);
+  background: var(--primary-color);
 }
 
 body {
@@ -89,13 +89,13 @@ body {
   line-height: 1.6;
   font-weight: 400;
   
-  /* Modern gradient background */
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  /* Clean professional background */
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
   background-attachment: fixed;
   min-height: 100vh;
 }
 
-/* Modern backdrop blur effect */
+/* Professional backdrop blur effect */
 body::before {
   content: '';
   position: fixed;
@@ -104,9 +104,9 @@ body::before {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(37, 99, 235, 0.02) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
 }

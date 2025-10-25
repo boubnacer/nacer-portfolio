@@ -19,17 +19,19 @@ footer a {
 
 .footer__socials a {
   background: var(--bg-color);
-  color: var(--white-color);
+  color: var(--primary-color);
   padding: 0.8rem;
   border-radius: 0.7rem;
   border: 1px solid transparent;
   display: flex;
+  transition: var(--transition-normal);
 }
 
 .footer__socials a:hover {
   background: transparent;
   border-color: var(--bg-color);
   color: var(--bg-color);
+  transform: translateY(-2px);
 }
 
 .footer__copyright {

@@ -1,5 +1,5 @@
 .nav__links {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.8);
   width: auto;
   padding: 0.7rem 0.2rem;
   z-index: 2;
@@ -8,11 +8,13 @@
   border-radius: 3rem;
   backdrop-filter: blur(15px);
   transition: var(--transition);
+  border: 1px solid var(--border-color);
 }
 
 .nav__links:hover {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
 
 .nav__links a {
@@ -38,16 +40,17 @@
 .hide__nav {
   cursor: pointer;
   padding: 0.5rem;
-  color: #fff;
+  color: var(--white-color);
   border-radius: 50%;
-
   background: var(--bg-color);
+  border: 1px solid var(--border-color);
   margin-bottom: 0.4rem;
 }
 
 .hide__nav:hover {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--bg-color);
+  background: var(--primary-color);
+  color: var(--bg-color);
+  border: 1px solid var(--primary-color);
 }
 
 .hide__nav svg {
