@@ -4,6 +4,8 @@ footer {
   margin-top: 7rem;
   text-align: center;
   font-size: 0.9rem;
+  margin-left: 8rem; /* Account for sidebar width */
+  max-width: calc(100% - 8rem);
 }
 
 footer a {
@@ -63,6 +65,13 @@ footer a {
 .footer__copyright {
   margin-bottom: 3rem;
   color: var(--bg-color);
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-left: 0; /* Reset margin on mobile */
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -13,8 +13,9 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 5rem;
-  /* padding-right: 2rem; */
+  margin-left: 8rem; /* Account for sidebar width */
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .header__details {
@@ -96,6 +97,7 @@
     max-width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-left: 0; /* Reset margin on mobile */
   }
   
   .header__details {

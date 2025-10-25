@@ -42,5 +42,14 @@
 @media only screen and (min-width: 1170px) {
   .vertical-timeline.vertical-timeline--two-columns {
     width: 90%;
+    margin-left: 8rem; /* Account for sidebar width */
+    max-width: calc(100% - 8rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    margin-left: 0; /* Reset margin on mobile */
+    max-width: 100%;
   }
 }

@@ -7,6 +7,8 @@
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-2xl);
   align-items: center;
+  margin-left: 8rem; /* Account for sidebar width */
+  max-width: calc(100% - 8rem);
 }
 
 .about__cards {
@@ -132,6 +134,8 @@
   .about__container {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
+    margin-left: 0; /* Reset margin on mobile */
+    max-width: 100%;
   }
   
   .about__cards {

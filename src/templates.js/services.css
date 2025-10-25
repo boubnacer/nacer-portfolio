@@ -10,6 +10,8 @@
   text-align: center;
   margin-bottom: 4rem;
   animation: fadeInUp 0.8s ease-out;
+  margin-left: 8rem; /* Account for sidebar width */
+  max-width: calc(100% - 8rem);
 }
 
 .skills__subtitle {
@@ -26,6 +28,8 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 0 1rem;
+  margin-left: 8rem; /* Account for sidebar width */
+  max-width: calc(100% - 8rem);
 }
 
 .skill__card {
@@ -167,6 +171,13 @@
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin-left: 0; /* Reset margin on mobile */
+    max-width: 100%;
+  }
+  
+  .skills__header {
+    margin-left: 0; /* Reset margin on mobile */
+    max-width: 100%;
   }
 
   .skill__card {
