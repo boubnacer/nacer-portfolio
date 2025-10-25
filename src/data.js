@@ -9,10 +9,10 @@ import { MdWork } from "react-icons/md";
 import { BsLinkedin } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
 import { FaGithubSquare } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa";
 
 import { FiGithub } from "react-icons/fi";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export const about = [
   {
