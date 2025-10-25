@@ -31,6 +31,11 @@
   overflow: hidden;
 }
 
+.nav__links a svg {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
 .nav__links a::before {
   content: '';
   position: absolute;
@@ -159,8 +164,8 @@
   }
 
   .nav__links a svg {
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 1.8rem;
+    width: 1.8rem;
   }
   
   .nav__links:active {
@@ -218,8 +223,8 @@
   }
 
   .nav__links a svg {
-    height: 1.9rem;
-    width: 1.9rem;
+    height: 1.6rem;
+    width: 1.6rem;
   }
 
   .nav__links a:hover {

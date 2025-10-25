@@ -92,7 +92,7 @@
     flex-direction: column;
     text-align: center;
     gap: var(--spacing-xl);
-    padding-top: 6rem;
+    padding-top: 8rem;
     min-height: auto;
     max-width: 100%;
     padding-left: 1rem;
@@ -122,7 +122,7 @@
 /* ----------------MEDIA QUERIES sm */
 @media screen and (max-width: 600px) {
   .header__container {
-    padding-top: 4rem;
+    padding-top: 6rem;
     gap: var(--spacing-lg);
   }
   
