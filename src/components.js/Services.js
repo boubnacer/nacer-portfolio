@@ -1,162 +1,163 @@
 import React from "react";
 import "../templates.js/services.css";
-import { HiOutlineBadgeCheck } from "react-icons/hi";
+import { 
+  HiOutlineBadgeCheck, 
+  HiCode, 
+  HiServer, 
+  HiDesktopComputer,
+  HiCloud,
+  HiDatabase
+} from "react-icons/hi";
+import { BiCodeBlock } from "react-icons/bi";
+import { SiAdobephotoshop, SiMicrosoftexcel } from "react-icons/si";
 
 const Services = () => {
   return (
     <section id="skills">
-      <h5>What i offre</h5>
-      <h2>Skills</h2>
-      <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
-            <h3>
-              modeling <br /> method
-            </h3>
+      <div className="skills__header">
+        <h5>What I Offer</h5>
+        <h2>My Technical Skills</h2>
+        <p className="skills__subtitle">
+          A comprehensive overview of my technical expertise across various domains
+        </p>
+      </div>
+
+      <div className="container skills__container">
+        {/* Programming Languages & Frameworks */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiCode />
           </div>
-
-          <ul className="service__list">
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Merise</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>UML</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3>
-              Office <br /> tools
-            </h3>
+          <h3>Programming Languages & Frameworks</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>JavaScript & NodeJs/ExpressJs</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>ReactJs | Redux/Redux Toolkit & VueJs</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>C & JAVA</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>HTML5/CSS3, Axios, SASS, Bootstrap & TailwindCss</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Git/Github</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Python & Django</span>
+            </div>
           </div>
+        </div>
 
-          <ul className="service__list">
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>VS Code</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Eclipse</p>
-            </li>
-
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Android Studio</p>
-            </li>
-          </ul>
-        </article>
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Programming Languages & Frameworks</h3>
+        {/* Database Management */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiDatabase />
           </div>
-
-          <ul className="service__list">
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>JavaScript & NodeJs/ExpressJs</p>
-            </li>
-
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>ReactJs | Redux/Redux Toolkit & VueJs</p>
-            </li>
-
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>C & JAVA</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>HTML5/CSS3, Axios, SASS, Bootstrap and TailwindCss</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Git/Github</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Python et Django</p>
-            </li>
-          </ul>
-        </article>
-        <article className="service">
-          <div className="service__head">
-            <h3>SGBD</h3>
+          <h3>Database Management</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>MongoDB</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>MySQL</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>SQLite</span>
+            </div>
           </div>
+        </div>
 
-          <ul className="service__list">
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>MongoDB</p>
-            </li>
-
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>MySQL</p>
-            </li>
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>SqlLite</p>
-            </li>
-          </ul>
-        </article>
-        <article className="service">
-          <div className="service__head">
-            <h3>
-              operating <br /> system
-            </h3>
+        {/* Development Tools */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiDesktopComputer />
           </div>
+          <h3>Development Tools</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>VS Code</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Eclipse</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Android Studio</span>
+            </div>
+          </div>
+        </div>
 
-          <ul className="service__list">
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Linux</p>
-            </li>
+        {/* Modeling & Design */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <BiCodeBlock />
+          </div>
+          <h3>Modeling & Design</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Merise</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>UML</span>
+            </div>
+          </div>
+        </div>
 
-            <li>
-              <h2 className="service__list-icon">
-                <HiOutlineBadgeCheck />
-              </h2>
-              <p>Windows</p>
-            </li>
-          </ul>
-        </article>
+        {/* Operating Systems */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiServer />
+          </div>
+          <h3>Operating Systems</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Linux</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Windows</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Cloud & Deployment */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiCloud />
+          </div>
+          <h3>Additional Skills</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>RESTful APIs</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Responsive Design</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Version Control</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
