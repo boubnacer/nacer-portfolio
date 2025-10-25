@@ -23,6 +23,8 @@
   margin-bottom: 4rem;
   position: relative;
   z-index: 1;
+  padding-left: 8rem; /* Account for sidebar width */
+  padding-right: 2rem;
 }
 
 .languages__icon {
@@ -63,6 +65,10 @@
 .languages__container {
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+  padding-left: 8rem; /* Account for sidebar width */
+  padding-right: 2rem;
+  max-width: 1200px;
 }
 
 .languages__grid {
@@ -269,6 +275,18 @@
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
+  .languages__header {
+    padding-left: 1rem; /* Reset padding on mobile */
+    padding-right: 1rem;
+  }
+  
+  .languages__container {
+    padding-left: 1rem; /* Reset padding on mobile */
+    padding-right: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
   .languages__grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
