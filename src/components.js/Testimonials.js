@@ -1,59 +1,67 @@
-import React, { useState } from "react";
-import { testmonials } from "../data";
+import React from "react";
+import { languages } from "../data";
 import "../templates.js/testimonials.css";
-import { GrNext } from "react-icons/gr";
-import { MdArrowBackIos } from "react-icons/md";
-import { IoIosArrowDroprightCircle as Next } from "react-icons/io";
-import { IoIosArrowDropleftCircle as Back } from "react-icons/io";
+import { FaGlobe, FaLanguage } from "react-icons/fa";
 
-const Testimonials = () => {
-  const [currentId, setCurrentId] = useState(1);
-  // const [activeClass,setActiveClass] = useState(1)
-
-  const currentItem = testmonials.find((item) => item.id === currentId);
-  const { id, name, image, review } = currentItem;
-
-  const nextItem = () => {
-    if (currentId > testmonials.length - 1) {
-      return setCurrentId(1);
-    }
-    return setCurrentId(currentId + 1);
-  };
-
-  const prevItem = () => {
-    if (currentId < 2) {
-      return setCurrentId(testmonials.length);
-    }
-    return setCurrentId(currentId - 1);
-  };
-
+const Languages = () => {
   return (
-    <section id="testimonials">
-      <h2>Languages</h2>
-      <div className="container tests__container">
-        <button onClick={prevItem} className="arrow__btn">
-          <Back />
-        </button>
-        {
-          <article key={id} className="testimonial">
-            <div className="user__avatar">
-              <img src={image} alt="image" />
-            </div>
-            <h5 className="user__name">{name}</h5>
-            <small className="user__review">{review}</small>
-          </article>
-        }
-        <div className="circles">
-          {testmonials.map((circle) => {
-            return <div className={currentId === circle.id && "active"}></div>;
-          })}
+    <section id="languages" className="languages__section">
+      <div className="languages__header">
+        <div className="languages__icon">
+          <FaLanguage />
         </div>
-        <button onClick={nextItem} className="arrow__btn">
-          <Next />
-        </button>
+        <h2>Languages</h2>
+        <p className="languages__subtitle">
+          Multilingual communication skills across different cultures and contexts
+        </p>
+      </div>
+
+      <div className="container languages__container">
+        <div className="languages__grid">
+          {languages.map((language) => (
+            <div key={language.id} className="language__card">
+              <div className="language__flag">
+                <img src={language.flag} alt={`${language.name} flag`} />
+              </div>
+              
+              <div className="language__content">
+                <h3 className="language__name">{language.name}</h3>
+                <div className="language__level">
+                  <span className={`level__badge level__${language.level.toLowerCase()}`}>
+                    {language.level}
+                  </span>
+                </div>
+                
+                <div className="language__proficiency">
+                  <div className="proficiency__bar">
+                    <div 
+                      className="proficiency__fill" 
+                      style={{ width: `${language.proficiency}%` }}
+                    ></div>
+                  </div>
+                  <span className="proficiency__percentage">{language.proficiency}%</span>
+                </div>
+                
+                <div className="language__skills">
+                  {language.skills.map((skill, index) => (
+                    <span key={index} className="skill__tag">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+                
+                <p className="language__description">{language.description}</p>
+              </div>
+              
+              <div className="language__globe">
+                <FaGlobe />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default Languages;

@@ -69,32 +69,46 @@ export const footerSocials = [
   },
 ];
 
-export const testmonials = [
+export const languages = [
   {
     id: 1,
     name: "English",
-    image: en,
-    review: "lu, écrit, parle",
+    flag: en,
+    proficiency: 85,
+    level: "Advanced",
+    skills: ["Reading", "Writing", "Speaking"],
+    description: "Professional working proficiency in English with strong technical communication skills"
   },
   {
     id: 2,
     name: "Français",
-    image: fr,
-    review: "lu, écrit, parle",
+    flag: fr,
+    proficiency: 95,
+    level: "Native",
+    skills: ["Reading", "Writing", "Speaking"],
+    description: "Native French speaker with excellent written and verbal communication"
   },
   {
     id: 3,
-    name: "Arab",
-    image: ar,
-    review: "lu, écrit, parle",
+    name: "العربية",
+    flag: ar,
+    proficiency: 90,
+    level: "Native",
+    skills: ["Reading", "Writing", "Speaking"],
+    description: "Native Arabic speaker with fluency in both Modern Standard Arabic and dialect"
   },
   {
     id: 4,
     name: "Tamazight",
-    image: ar,
-    review: "parle",
+    flag: ar,
+    proficiency: 80,
+    level: "Fluent",
+    skills: ["Speaking"],
+    description: "Fluent in Tamazight (Berber) with conversational proficiency"
   },
 ];
+
+export const testmonials = languages;
 
 export const contacts = [
   {
