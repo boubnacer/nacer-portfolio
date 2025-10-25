@@ -45,7 +45,6 @@
 }
 
 .nav__links a:hover {
-  transform: translateX(8px) scale(1.05);
   color: var(--white-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -55,10 +54,9 @@
 }
 
 .nav__links a.active {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-variant-color));
+  background: var(--primary-color);
   color: var(--white-color);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
 
 .nav__links a.active::before {
@@ -170,11 +168,13 @@
   }
   
   .nav__links a:hover {
-    transform: translateY(-3px) scale(1.05);
+    color: var(--white-color);
   }
   
   .nav__links a.active {
-    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.5);
+    background: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
   }
   
   .nav__links a.active::after {
@@ -223,11 +223,13 @@
   }
 
   .nav__links a:hover {
-    transform: translateY(-2px) scale(1.03);
+    color: var(--white-color);
   }
 
   .nav__links a.active {
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+    background: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
   }
 
   .aside__socials {
