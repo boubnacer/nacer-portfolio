@@ -10,8 +10,8 @@
   text-align: center;
   margin-bottom: 4rem;
   animation: fadeInUp 0.8s ease-out;
-  margin-left: 8rem; /* Account for sidebar width */
-  max-width: calc(100% - 8rem);
+  padding-left: 8rem; /* Account for sidebar width */
+  padding-right: 2rem;
 }
 
 .skills__subtitle {
@@ -27,9 +27,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  padding: 0 1rem;
-  margin-left: 8rem; /* Account for sidebar width */
-  max-width: calc(100% - 8rem);
+  padding: 0 1rem 0 8rem; /* Account for sidebar width */
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .skill__card {
@@ -171,13 +171,14 @@
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    margin-left: 0; /* Reset margin on mobile */
+    padding: 0 1rem; /* Reset padding on mobile */
+    margin: 0 auto;
     max-width: 100%;
   }
   
   .skills__header {
-    margin-left: 0; /* Reset margin on mobile */
-    max-width: 100%;
+    padding-left: 1rem; /* Reset padding on mobile */
+    padding-right: 1rem;
   }
 
   .skill__card {

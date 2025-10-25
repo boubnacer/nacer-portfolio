@@ -3,8 +3,10 @@
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
-  margin-left: 8rem; /* Account for sidebar width */
-  max-width: calc(100% - 8rem);
+  margin: 0 auto;
+  padding-left: 8rem; /* Account for sidebar width */
+  padding-right: 2rem;
+  max-width: 1200px;
 }
 
 .contact__options {
@@ -89,7 +91,8 @@ textarea:focus {
   .container.contact__container {
     grid-template-columns: 1fr;
     gap: 2rem;
-    margin-left: 0; /* Reset margin on mobile */
+    padding: 0 1rem; /* Reset padding on mobile */
+    margin: 0 auto;
     max-width: 100%;
   }
 }

@@ -4,8 +4,10 @@ footer {
   margin-top: 7rem;
   text-align: center;
   font-size: 0.9rem;
-  margin-left: 8rem; /* Account for sidebar width */
-  max-width: calc(100% - 8rem);
+  margin: 7rem auto 0;
+  padding-left: 8rem; /* Account for sidebar width */
+  padding-right: 2rem;
+  max-width: 1200px;
 }
 
 footer a {
@@ -69,7 +71,8 @@ footer a {
 
 @media screen and (max-width: 1024px) {
   footer {
-    margin-left: 0; /* Reset margin on mobile */
+    padding: 3rem 1rem; /* Reset padding on mobile */
+    margin: 7rem auto 0;
     max-width: 100%;
   }
 }

@@ -42,14 +42,17 @@
 @media only screen and (min-width: 1170px) {
   .vertical-timeline.vertical-timeline--two-columns {
     width: 90%;
-    margin-left: 8rem; /* Account for sidebar width */
-    max-width: calc(100% - 8rem);
+    margin: 0 auto;
+    padding-left: 8rem; /* Account for sidebar width */
+    padding-right: 2rem;
+    max-width: 1200px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .vertical-timeline.vertical-timeline--two-columns {
-    margin-left: 0; /* Reset margin on mobile */
+    padding: 0 1rem; /* Reset padding on mobile */
+    margin: 0 auto;
     max-width: 100%;
   }
 }
