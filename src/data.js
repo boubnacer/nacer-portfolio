@@ -26,8 +26,8 @@ export const about = [
     id: 2,
     icon: <GoProject />,
     title: "Projects",
-    descri: "5+ Full-Stack MERN applications",
-    descri1: "3+ AI/ML & RAG systems",
+    descri: "6+ Full-Stack MERN applications",
+    descri1: "4+ AI/ML, IoT & RAG systems",
   },
 ];
 
@@ -143,13 +143,23 @@ export const timelineElements = [
     title: "Lost Objects Platform",
     location: "Personal Project - mafqoudat.com",
     descreption:
-      "Full-stack web service for helping people find lost objects. Features: geolocation, notifications, multi-language support, advanced search filters.",
-    buttonText: "View Project",
+      "Complete web service with geolocation and notification system. Full-stack development with React, Node.js and MongoDB.",
+    buttonText: "Visit Website",
     date: "2024 - Present",
     icon: "work",
   },
   {
     id: 3,
+    title: "IoT Health Monitoring System",
+    location: "Academic Project",
+    descreption:
+      "Embedded solution for vital parameters tracking using ESP32 and biometric sensors. Secure data transmission to cloud dashboard.",
+    buttonText: "View Project",
+    date: "2024",
+    icon: "work",
+  },
+  {
+    id: 4,
     title: "RAG Web Application",
     location: "Academic Project",
     descreption:
@@ -159,7 +169,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 4,
+    id: 5,
     title: "RAG Android Application",
     location: "Academic Project",
     descreption:
@@ -169,7 +179,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 5,
+    id: 6,
     title: "Frontend Developer Intern",
     location: "AJICOD, Dcheira El Jihadia",
     descreption:
@@ -179,7 +189,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 6,
+    id: 7,
     title: "Professional License in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
@@ -189,7 +199,7 @@ export const timelineElements = [
     icon: "school",
   },
   {
-    id: 7,
+    id: 8,
     title: "Baccalaureate in Physical and Chemical Sciences",
     location: "Lycée Al Arak, Taroudant",
     descreption:
@@ -200,29 +210,30 @@ export const timelineElements = [
   },
 ];
 
+// Optional: Add technical skills section
 export const technicalSkills = [
   {
     id: 1,
-    title: "Full-Stack Development",
-    description: "MERN Stack (MongoDB, Express, React, Node.js), Vue.js",
-    icon: "💻"
-  },
-  {
-    id: 2,
-    title: "Frontend Technologies",
-    description: "JavaScript, React, Vue.js, TailwindCSS, HTML5, CSS3",
+    title: "Frontend Development",
+    description: "React, Vue.js, JavaScript, HTML5, CSS3, TailwindCSS",
     icon: "🎨"
   },
   {
-    id: 3,
-    title: "Backend & APIs",
-    description: "Node.js, Express, REST APIs, MongoDB, Database Design",
+    id: 2,
+    title: "Backend Development",
+    description: "Node.js, Express, REST APIs, MongoDB",
     icon: "⚙️"
+  },
+  {
+    id: 3,
+    title: "IoT & Embedded Systems",
+    description: "ESP32, Arduino, C Programming, Biometric Sensors",
+    icon: "🔌"
   },
   {
     id: 4,
     title: "AI & Machine Learning",
-    description: "OpenAI API, RAG Systems, Document Processing, AI Integration",
+    description: "OpenAI API, RAG Systems, Document Processing",
     icon: "🤖"
   },
   {
@@ -233,8 +244,8 @@ export const technicalSkills = [
   },
   {
     id: 6,
-    title: "IoT & Embedded Systems",
-    description: "Arduino, ESP32, C Programming, Embedded Development",
-    icon: "🔌"
+    title: "DevOps & Tools",
+    description: "Git/GitHub, VS Code, MongoDB Atlas, Postman, UML",
+    icon: "🛠️"
   }
 ];
