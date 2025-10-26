@@ -12,11 +12,24 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+/* Dark mode navbar styles */
+[data-theme="dark"] .nav__links {
+  background: rgba(65, 65, 65, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
 .nav__links:hover {
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
+}
+
+[data-theme="dark"] .nav__links:hover {
+  background: rgba(65, 65, 65, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
 .nav__links a {
@@ -148,6 +161,64 @@
 .aside__socials a:hover svg {
   transform: scale(1.15);
   filter: brightness(1.2);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  color: var(--light-color);
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  height: 1.3rem;
+  width: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  border-radius: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--white-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.theme-toggle:hover::before {
+  opacity: 1;
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+/* Dark mode theme toggle */
+[data-theme="dark"] .theme-toggle {
+  color: var(--light-color);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  color: var(--white-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 1024px) {

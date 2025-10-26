@@ -7,11 +7,12 @@ import Services from "./components.js/Services";
 import Languages from "./components.js/Testimonials";
 import { useState } from "react";
 import Timeline from "./components.js/Timeline";
+import AppProvider from "./context";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(true);
   return (
-    <>
+    <AppProvider>
       <Header showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <Navbar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
       <About />
@@ -21,7 +22,7 @@ function App() {
       <Languages />
       <Contact />
       <Footer />
-    </>
+    </AppProvider>
   );
 }
 
