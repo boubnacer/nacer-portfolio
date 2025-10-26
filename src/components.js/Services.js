@@ -37,7 +37,7 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>C/C++ (Embedded Systems)</span>
+              <span>C (Embedded Systems)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -72,10 +72,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Big Data Processing</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Data Pipeline Design</span>
             </div>
           </div>
         </div>
@@ -115,10 +111,6 @@ const Services = () => {
               <HiOutlineBadgeCheck className="skill__check" />
               <span>RAG Systems</span>
             </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>OpenAI API</span>
-            </div>
           </div>
         </div>
 
@@ -143,19 +135,7 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Sensor Integration & Calibration</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>IoT Protocols (MQTT, CoAP)</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Edge Computing Architecture</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Hardware-Software Integration</span>
+              <span>IoT Protocols (MQTT)</span>
             </div>
           </div>
         </div>
@@ -170,10 +150,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Network Protocols (TCP/IP)</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Cybersecurity</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -212,10 +188,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Real-time Systems</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Device Drivers</span>
             </div>
           </div>
         </div>
