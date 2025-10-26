@@ -19,15 +19,15 @@ export const about = [
     id: 1,
     icon: <MdWork />,
     title: "Experience",
-    descri: "2+ months graduation project",
-    descri1: "3+ months self-training",
+    descri: "2+ months professional internship",
+    descri1: "3+ years self-training & projects",
   },
   {
     id: 2,
     icon: <GoProject />,
     title: "Projects",
-    descri: "15+ ReactJs mini projets",
-    descri1: "2+ MongoDB/ExpressJs/ReactJs/NodeJs projects",
+    descri: "5+ Full-Stack MERN applications",
+    descri1: "3+ AI/ML & RAG systems",
   },
 ];
 
@@ -116,13 +116,13 @@ export const contacts = [
     icon: <HiOutlineMail />,
     title: "Email",
     email: "boubkraoui.nacer@gmail.com",
-    link: "mailto:boubkraoui.nacer@email.com",
+    link: "mailto:boubkraoui.nacer@gmail.com",
   },
   {
     id: 2,
     icon: <ImWhatsapp />,
     title: "Whatsapp",
-    email: "+212654587065",
+    email: "+212 654-587-065",
     link: "https://api.whatsapp.com/send?phone=+212654587065",
   },
 ];
@@ -130,51 +130,111 @@ export const contacts = [
 export const timelineElements = [
   {
     id: 1,
-    title: "Entreprise AJICOD",
-    location: "Dcheira El Jihadia",
+    title: "Master in Embedded Artificial Intelligence",
+    location: "Université Ibn Zohr",
     descreption:
-      "Il s'agit d'un projet de fin d'année, dans lequel j'ai travaillé sur le front-end du Site Web qui fait la gestion des activités des écoles, En utilisant le framework VueJs.",
-    buttonText: "View Frontend projects",
-    date: "15/05/2021 - 05/07/2021",
-    icon: "work",
+      "Currently pursuing Master's degree in Embedded AI, specializing in MERN stack development and AI/ML integration.",
+    buttonText: "View AI Projects",
+    date: "2024 - Present",
+    icon: "school",
   },
   {
     id: 2,
-    title: "Université Ibnou Zohr",
-    location: " Ayt Melloul",
+    title: "Lost Objects Platform",
+    location: "Personal Project",
     descreption:
-      "Licence professionnelle, Mention Assez Bien en Systèmes informatiques embarqués",
-    buttonText: "View Frontend projects",
+      "Full-stack web service for helping people find lost objects. Features: geolocation, notifications, multi-language support, advanced search filters.",
+    buttonText: "View Project",
+    date: "2024 - Present",
+    icon: "work",
+  },
+  {
+    id: 3,
+    title: "RAG Web Application",
+    location: "Academic Project",
+    descreption:
+      "Document-based Q&A application using MERN stack. Features: document upload, OpenAI API integration, contextual response generation.",
+    buttonText: "View Project",
+    date: "2024",
+    icon: "work",
+  },
+  {
+    id: 4,
+    title: "RAG Android Application",
+    location: "Academic Project",
+    descreption:
+      "Native mobile application with Java. Same RAG functionality as web version, optimized for mobile devices with intuitive UI.",
+    buttonText: "View Project",
+    date: "2024",
+    icon: "work",
+  },
+  {
+    id: 5,
+    title: "Frontend Developer Intern",
+    location: "AJICOD, Dcheira El Jihadia",
+    descreption:
+      "Developed user interface for school activity management system using Vue.js. Created reusable components and optimized performance.",
+    buttonText: "View Projects",
+    date: "May 2021 - July 2021",
+    icon: "work",
+  },
+  {
+    id: 6,
+    title: "Professional License in Embedded Systems",
+    location: "Université Ibn Zohr",
+    descreption:
+      "Professional License, Good Mention in Embedded Computer Systems",
+    buttonText: "View Academic Projects",
     date: "2018 - 2021",
     icon: "school",
   },
   {
-    id: 3,
-    title: "Université Ibnou Zohr",
-    location: " Ayt Melloul",
+    id: 7,
+    title: "Baccalaureate in Physical and Chemical Sciences",
+    location: "Lycée Al Arak, Taroudant",
     descreption:
-      " DEUP, Mention Assez Bien en Systèmes informatiques embarqués",
-    buttonText: "View Frontend projects",
-    date: "2018 - 2020",
+      "Baccalaureate, Good Mention in Physical and Chemical Sciences",
+    buttonText: "View Academic Record",
+    date: "June 2018",
     icon: "school",
+  },
+];
+
+export const technicalSkills = [
+  {
+    id: 1,
+    title: "Full-Stack Development",
+    description: "MERN Stack (MongoDB, Express, React, Node.js), Vue.js",
+    icon: "💻"
+  },
+  {
+    id: 2,
+    title: "Frontend Technologies",
+    description: "JavaScript, React, Vue.js, TailwindCSS, HTML5, CSS3",
+    icon: "🎨"
+  },
+  {
+    id: 3,
+    title: "Backend & APIs",
+    description: "Node.js, Express, REST APIs, MongoDB, Database Design",
+    icon: "⚙️"
   },
   {
     id: 4,
-    title: "Université Ibnou Zohr",
-    location: " Ayt Melloul",
-    descreption: " Licence fondamentale en Sciences de matière physique",
-    buttonText: "View Frontend projects",
-    date: "2018 - 2019",
-    icon: "school",
+    title: "AI & Machine Learning",
+    description: "OpenAI API, RAG Systems, Document Processing, AI Integration",
+    icon: "🤖"
   },
   {
     id: 5,
-    title: "Lycée Al Arak",
-    location: "Taroudant",
-    descreption:
-      "Baccalauréat, Mention Bien en Sciences physiques et chimiques",
-    buttonText: "View Frontend projects",
-    date: "21 Juin 2018",
-    icon: "school",
+    title: "Mobile Development",
+    description: "Android Studio, Java, Native Android Development",
+    icon: "📱"
   },
+  {
+    id: 6,
+    title: "IoT & Embedded Systems",
+    description: "Arduino, ESP32, C Programming, Embedded Development",
+    icon: "🔌"
+  }
 ];
