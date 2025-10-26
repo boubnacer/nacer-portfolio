@@ -58,7 +58,7 @@ const Services = () => {
           </div>
         </div>
 
-        {/* Database Management */}
+        {/* Database & Data Management */}
         <div className="skill__card">
           <div className="skill__icon">
             <HiDatabase />
@@ -79,7 +79,15 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Big Data Management</span>
+              <span>Big Data Processing</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Hadoop & Spark</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Data Pipeline Design</span>
             </div>
           </div>
         </div>
@@ -101,11 +109,23 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Deep Learning</span>
+              <span>Deep Learning (CNN, RNN, LSTM)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Computer Vision & Image Processing</span>
+              <span>Neural Networks</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>TensorFlow & PyTorch</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Computer Vision & OpenCV</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Image Processing & Classification</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -113,11 +133,19 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>TinyML (Edge ML)</span>
+              <span>Text Processing & Analysis</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Data Analysis with Python</span>
+              <span>TinyML & Model Optimization</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Data Analysis (Pandas, NumPy)</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Statistical Analysis</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -147,19 +175,39 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Embedded Electronics</span>
+              <span>Circuit Design</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Edge & Fog Computing</span>
+              <span>Microcontroller Programming</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>IoT & Sensor Technologies</span>
+              <span>Hardware-Software Integration</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>System on Chip (SoC)</span>
+              <span>Sensor Integration & Calibration</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>IoT Protocols (MQTT, CoAP)</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Data Acquisition</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Edge Computing Architecture</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Distributed Systems</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Cloud-Edge Integration</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -193,7 +241,11 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Mobile Services</span>
+              <span>Mobile App Architecture</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>RESTful APIs Integration</span>
             </div>
           </div>
         </div>
@@ -207,15 +259,39 @@ const Services = () => {
           <div className="skill__items">
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Advanced Computer Networks</span>
+              <span>Network Protocols (TCP/IP)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>System Security</span>
+              <span>Network Architecture</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Parallel Programming</span>
+              <span>Cybersecurity</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Encryption & Security Protocols</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Vulnerability Assessment</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Parallel Computing</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Multi-threading</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Concurrent Programming</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>System Architecture</span>
             </div>
           </div>
         </div>
@@ -303,7 +379,19 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Embedded Linux & RTOS</span>
+              <span>Linux Kernel</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Real-time Systems</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Device Drivers</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>System Programming</span>
             </div>
           </div>
         </div>
