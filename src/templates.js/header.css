@@ -13,7 +13,7 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  margin-left: 8rem; /* Account for sidebar width */
+  margin-left: 10rem; /* Account for sidebar width */
   padding-left: 8rem;
   padding-right: 2rem;
 }
@@ -92,7 +92,7 @@
     flex-direction: column;
     text-align: center;
     gap: var(--spacing-xl);
-    padding-top: 10rem;
+    padding-top: 8rem;
     min-height: auto;
     max-width: 100%;
     padding-left: 1rem;
