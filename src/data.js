@@ -130,10 +130,10 @@ export const contacts = [
 export const timelineElements = [
   {
     id: 1,
-    title: "Master in Embedded Artificial Intelligence",
+    title: "Master's Degree in Embedded Artificial Intelligence",
     location: "Université Ibn Zohr",
     descreption:
-      "Currently pursuing Master's degree in Embedded AI, specializing in MERN stack development and AI/ML integration.",
+      "Currently pursuing Master's degree in Embedded Artificial Intelligence.",
     buttonText: "View AI Projects",
     date: "2024 - Present",
     icon: "school",
@@ -180,10 +180,10 @@ export const timelineElements = [
   },
   {
     id: 6,
-    title: "Professional License in Embedded Systems",
+    title: "Professional License in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
-      "Professional License, Good Mention in Embedded Computer Systems",
+      "Professional License, cum laude in Embedded Computer Systems",
     buttonText: "View Academic Projects",
     date: "2018 - 2021",
     icon: "school",
@@ -193,7 +193,7 @@ export const timelineElements = [
     title: "Baccalaureate in Physical and Chemical Sciences",
     location: "Lycée Al Arak, Taroudant",
     descreption:
-      "Baccalaureate, Good Mention in Physical and Chemical Sciences",
+      "Baccalaureate, magna cum laude in Physical and Chemical Sciences",
     buttonText: "View Academic Record",
     date: "June 2018",
     icon: "school",
