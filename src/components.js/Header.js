@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../assets/me.png";
+import me from "../assets/me.jpg";
 import "../templates.js/header.css";
 import Resume from "../assets/Resume.pdf";
 
