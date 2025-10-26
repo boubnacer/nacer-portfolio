@@ -183,7 +183,7 @@ export const timelineElements = [
     title: "Professional License in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
-      "Professional License, cum laude in Embedded Computer Systems",
+      "Professional License with honors in Embedded Computer Systems",
     buttonText: "View Academic Projects",
     date: "2018 - 2021",
     icon: "school",
@@ -193,7 +193,7 @@ export const timelineElements = [
     title: "Baccalaureate in Physical and Chemical Sciences",
     location: "Lycée Al Arak, Taroudant",
     descreption:
-      "Baccalaureate, magna cum laude in Physical and Chemical Sciences",
+      "Baccalaureate with honors in Physical and Chemical Sciences",
     buttonText: "View Academic Record",
     date: "June 2018",
     icon: "school",
