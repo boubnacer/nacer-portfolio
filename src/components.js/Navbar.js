@@ -9,7 +9,7 @@ import AsideSocials from "./AsideSocials";
 import { useGlobalContext } from "../context";
 
 const Navbar = () => {
-  const [activeClass, setActiveClass] = useState("#");
+  const [activeClass, setActiveClass] = useState("#header");
   const { isDarkMode, toggleDarkMode } = useGlobalContext();
 
   useEffect(() => {
@@ -31,6 +31,9 @@ const Navbar = () => {
       });
     };
 
+    // Set initial active class based on scroll position
+    handleScroll();
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -46,8 +49,8 @@ const Navbar = () => {
         <div className="nav__links">
           <a
             href="#header"
-            onClick={() => setActiveClass("#")}
-            className={activeClass === "#" ? "active" : ""}
+            onClick={() => setActiveClass("#header")}
+            className={activeClass === "#header" ? "active" : ""}
           >
             <AiOutlineHome />
           </a>
