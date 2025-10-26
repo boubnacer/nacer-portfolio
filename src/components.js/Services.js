@@ -10,6 +10,7 @@ import {
 } from "react-icons/hi";
 import { BiCodeBlock } from "react-icons/bi";
 import { SiAdobephotoshop, SiMicrosoftexcel } from "react-icons/si";
+import { FaRobot, FaMobileAlt, FaCogs } from "react-icons/fa";
 
 const Services = () => {
   return (
@@ -44,15 +45,15 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
+              <span>Python</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
               <span>HTML5/CSS3, Axios, SASS, Bootstrap & TailwindCss</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Git/Github</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Python & Django</span>
             </div>
           </div>
         </div>
@@ -79,6 +80,80 @@ const Services = () => {
           </div>
         </div>
 
+        {/* AI & Machine Learning */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <FaRobot />
+          </div>
+          <h3>AI & Machine Learning</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>OpenAI API</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>RAG Systems</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Document Processing</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>AI Integration</span>
+            </div>
+          </div>
+        </div>
+
+        {/* IoT & Embedded Systems */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <FaCogs />
+          </div>
+          <h3>IoT & Embedded Systems</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>ESP32</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Arduino</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Biometric Sensors</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>IoT Development</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Development */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <FaMobileAlt />
+          </div>
+          <h3>Mobile Development</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Android Studio</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Java</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Native Android Development</span>
+            </div>
+          </div>
+        </div>
+
         {/* Development Tools */}
         <div className="skill__card">
           <div className="skill__icon">
@@ -97,6 +172,14 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Android Studio</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>MongoDB Atlas</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Postman</span>
             </div>
           </div>
         </div>
