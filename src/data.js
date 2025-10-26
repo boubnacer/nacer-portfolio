@@ -141,7 +141,7 @@ export const timelineElements = [
   {
     id: 2,
     title: "Lost Objects Platform",
-    location: "Personal Project",
+    location: "Personal Project - mafqoudat.com",
     descreption:
       "Full-stack web service for helping people find lost objects. Features: geolocation, notifications, multi-language support, advanced search filters.",
     buttonText: "View Project",
