@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../templates.js/navbar.css";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
@@ -44,13 +44,6 @@ const Navbar = () => {
     <nav>
       <div className="sidebar">
         <div className="nav__links">
-          <a
-            href="#header"
-            onClick={() => setActiveClass("#")}
-            className={activeClass === "#" ? "active" : ""}
-          >
-            <AiOutlineHome />
-          </a>
           <a
             href="#about"
             onClick={() => setActiveClass("#about")}
