@@ -29,6 +29,13 @@ export const about = [
     descri: "6+ Full-Stack MERN applications",
     descri1: "4+ AI/ML, IoT & RAG systems",
   },
+  {
+    id: 3,
+    icon: <GoProject />,
+    title: "Technologies",
+    descri: "9+ Programming Languages & Frameworks",
+    descri1: "Full-Stack, IoT, AI/ML Expertise",
+  },
 ];
 
 export const socials = [
@@ -226,26 +233,44 @@ export const technicalSkills = [
   },
   {
     id: 3,
+    title: "Programming Languages",
+    description: "JavaScript, Python, C, Java",
+    icon: "💻"
+  },
+  {
+    id: 4,
     title: "IoT & Embedded Systems",
     description: "ESP32, Arduino, C Programming, Biometric Sensors",
     icon: "🔌"
   },
   {
-    id: 4,
+    id: 5,
     title: "AI & Machine Learning",
     description: "OpenAI API, RAG Systems, Document Processing",
     icon: "🤖"
   },
   {
-    id: 5,
+    id: 6,
     title: "Mobile Development",
     description: "Android Studio, Java, Native Android Development",
     icon: "📱"
   },
   {
-    id: 6,
+    id: 7,
     title: "DevOps & Tools",
-    description: "Git/GitHub, VS Code, MongoDB Atlas, Postman, UML",
+    description: "Git/GitHub, VS Code, MongoDB Atlas, Postman",
     icon: "🛠️"
+  },
+  {
+    id: 8,
+    title: "Modeling & Design",
+    description: "UML, Merise (Database Modeling)",
+    icon: "📊"
+  },
+  {
+    id: 9,
+    title: "Operating Systems",
+    description: "Linux, Windows",
+    icon: "🖥️"
   }
 ];
