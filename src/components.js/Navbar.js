@@ -14,9 +14,18 @@ const Navbar = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
+    const header = document.querySelector("header[id]");
+    
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
 
+      // Check if we're at the top (in header area)
+      if (header && scrollPosition < header.offsetTop + header.offsetHeight) {
+        setActiveClass("#header");
+        return;
+      }
+
+      // Check sections
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
