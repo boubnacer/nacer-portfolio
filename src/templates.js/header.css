@@ -92,7 +92,7 @@
     flex-direction: column;
     text-align: center;
     gap: var(--spacing-xl);
-    padding-top: 8rem;
+    padding-top: 10rem;
     min-height: auto;
     max-width: 100%;
     padding-left: 1rem;
