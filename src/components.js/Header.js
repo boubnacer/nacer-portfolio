@@ -12,7 +12,12 @@ const Header = () => {
     <header id="header">
       <div className="header__container">
         <div className="me">
-          <img className="me_img" src={isDarkMode ? me : meLight} alt="me" />
+          <img 
+            key={isDarkMode ? 'dark' : 'light'}
+            className="me_img" 
+            src={isDarkMode ? me : meLight} 
+            alt="me" 
+          />
         </div>
         <div className="container header__details">
           <h1>Boubkraoui Nacer</h1>
