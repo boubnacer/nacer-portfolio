@@ -147,10 +147,10 @@ export const timelineElements = [
   },
   {
     id: 2,
-    title: "Lost Objects Platform",
-    location: "Personal Project - mafqoudat.com",
+    title: "Founder & CTO - Mafqoudat.com",
+    location: "Digital Platform for Lost & Found Objects",
     descreption:
-      "Complete web service with geolocation and notification system. Full-stack development with React, Node.js and MongoDB.",
+      "Founded and launched a complete web service for helping people find lost objects. Features: geolocation, notifications, multi-language support, advanced search filters. Full-stack development with React, Node.js and MongoDB. Currently active and deployed.",
     buttonText: "Visit Website",
     date: "2024 - Present",
     icon: "work",
