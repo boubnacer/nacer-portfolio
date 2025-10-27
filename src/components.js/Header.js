@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <div className="container header__details">
           <h1>Boubkraoui Nacer</h1>
-          <h5 className="text-light">Founder & CTO of Mafqoudat.com | Embedded AI Student</h5>
+          <h5 className="text-light">Master's Student in Embedded Artificial Intelligence | Full-Stack Web Developer (React, Node.js, MongoDB) | Founder & CTO of mafqoudat.com | Passionate About AI & IoT Systems</h5>
           <div className="contact-cv__btns">
             <a href={Resume} className="btn" download>
               Download CV
