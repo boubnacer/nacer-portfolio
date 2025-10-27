@@ -84,18 +84,18 @@ export const languages = [
     name: "Français",
     flag: fr,
     proficiency: 95,
-    level: "Native",
+    level: "Fluent",
     skills: ["Reading", "Writing", "Speaking"],
-    description: "Native French speaker with excellent written and verbal communication"
+    description: "Fluent French speaker with excellent written and verbal communication"
   },
   {
     id: 3,
     name: "العربية",
     flag: ar,
     proficiency: 90,
-    level: "Native",
+    level: "Fluent",
     skills: ["Reading", "Writing", "Speaking"],
-    description: "Native Arabic speaker with fluency in both Modern Standard Arabic and dialect"
+    description: "Fluent Arabic speaker with proficiency in both Modern Standard Arabic and dialect"
   },
   {
     id: 4,

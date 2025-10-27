@@ -5,6 +5,7 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { FaLanguage } from "react-icons/fa";
 import AsideSocials from "./AsideSocials";
 import { useGlobalContext } from "../context";
 
@@ -83,6 +84,13 @@ const Navbar = () => {
             className={activeClass === "#skills" ? "active" : ""}
           >
             <RiServiceLine />
+          </a>
+          <a
+            href="#languages"
+            onClick={() => setActiveClass("#languages")}
+            className={activeClass === "#languages" ? "active" : ""}
+          >
+            <FaLanguage />
           </a>
           <a
             href="#contact"
