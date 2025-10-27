@@ -24,20 +24,13 @@ const About = () => {
           </div>
           <div>
             <p>
-              I'm Nacer, a Master's student in Embedded Artificial Intelligence at Université Ibn Zohr, 
-              with a strong foundation in full-stack development and embedded systems. I hold a Professional 
-              License in Embedded Computer Systems and have hands-on experience building real-world applications.
+              I'm Nacer, a Master's student in Embedded Artificial Intelligence at Université Ibn Zohr. 
+              I specialize in IoT systems, embedded programming with ESP32/Arduino, and AI/ML applications 
+              using TensorFlow and PyTorch. I hold a Professional License in Embedded Computer Systems.
             </p>
             <p>
-              As the Founder & CTO of Mafqoudat.com, I've successfully launched a complete web platform 
-              for lost and found objects, demonstrating my ability to transform ideas into deployed products. 
-              My technical expertise spans across MERN stack development, IoT systems with ESP32 and Arduino, 
-              AI/ML applications using TensorFlow and PyTorch, and embedded systems programming in C.
-            </p>
-            <p>
-              Beyond technical skills, I'm a strong communicator who values collaboration and knowledge sharing. 
-              Currently, I'm focused on advancing my expertise in Embedded AI while continuing to build innovative 
-              solutions that bridge the gap between web technologies and intelligent embedded systems.
+              As Founder & CTO of Mafqoudat.com, I've successfully launched a deployed platform, 
+              demonstrating my ability to build and deploy real-world solutions.
             </p>
             <a href="#contact" className="btn btn-primary">
               Contact Me
