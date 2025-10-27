@@ -80,6 +80,13 @@
   box-shadow: var(--shadow-md);
   transition: all 0.3s ease-in-out, opacity 0.4s ease-in-out;
   animation: fadeInImage 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.me_img.transitioning {
+  opacity: 0.7;
+  transform: scale(0.98);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 @keyframes fadeInImage {
@@ -124,6 +131,9 @@
   .me_img {
     width: 250px;
     height: 250px;
+    transition: all 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    animation: fadeInImage 0.5s ease-in-out;
+    animation-fill-mode: both;
   }
   
   .contact-cv__btns {
@@ -150,6 +160,9 @@
   .me_img {
     width: 250px;
     height: 250px;
+    transition: all 0.3s ease-in-out, opacity 0.4s ease-in-out;
+    animation: fadeInImage 0.5s ease-in-out;
+    animation-fill-mode: both;
   }
   
   .contact-cv__btns {
