@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import me from "../assets/me.jpg";
 import meLight from "../assets/meLight.jpg";
 import "../templates.js/header.css";
@@ -7,28 +7,15 @@ import { useGlobalContext } from "../context";
 
 const Header = () => {
   const { isDarkMode } = useGlobalContext();
-  const [imageSrc, setImageSrc] = useState(isDarkMode ? me : meLight);
-  const [isTransitioning, setIsTransitioning] = useState(false);
-
-  useEffect(() => {
-    const newSrc = isDarkMode ? me : meLight;
-    if (newSrc !== imageSrc) {
-      setIsTransitioning(true);
-      const timer = setTimeout(() => {
-        setImageSrc(newSrc);
-        setIsTransitioning(false);
-      }, 200);
-      return () => clearTimeout(timer);
-    }
-  }, [isDarkMode, imageSrc]);
-
+  
   return (
     <header id="header">
       <div className="header__container">
         <div className="me">
           <img 
-            className={`me_img ${isTransitioning ? 'transitioning' : ''}`}
-            src={imageSrc} 
+            key={isDarkMode ? 'dark' : 'light'}
+            className="me_img" 
+            src={isDarkMode ? me : meLight} 
             alt="me" 
           />
         </div>
