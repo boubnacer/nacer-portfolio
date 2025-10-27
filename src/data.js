@@ -29,13 +29,6 @@ export const about = [
     descri: "6+ Full-Stack MERN applications",
     descri1: "4+ AI/ML, IoT & RAG systems",
   },
-  {
-    id: 3,
-    icon: <GoProject />,
-    title: "Technologies",
-    descri: "9+ Programming Languages & Frameworks",
-    descri1: "Full-Stack, IoT, AI/ML Expertise",
-  },
 ];
 
 export const socials = [
