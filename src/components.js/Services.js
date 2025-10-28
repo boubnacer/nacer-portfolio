@@ -89,7 +89,7 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>TensorFlow & PyTorch</span>
+              <span>TensorFlow</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -175,19 +175,19 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>MongoDB Atlas</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
               <span>Postman</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Linux Kernel</span>
+              <span>Android Studio</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Real-time Systems</span>
+              <span>Arduino IDE</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Git/GitHub</span>
             </div>
           </div>
         </div>
