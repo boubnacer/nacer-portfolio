@@ -14,7 +14,7 @@
   color: var(--primary-color) !important;
 }
 
-.timeline-date {
+.timeline-date-desktop {
   color: var(--primary-color) !important;
   font-weight: 600 !important;
   font-size: 0.9rem !important;
@@ -106,16 +106,22 @@
     font-size: 0.85rem;
   }
 
-  /* Mobile-specific date positioning - move to bottom */
-  .timeline-date {
-    order: 999 !important;
-    margin-top: 1rem !important;
-    margin-bottom: 0 !important;
-    text-align: center !important;
+  /* Hide desktop date in mobile */
+  .timeline-date-desktop {
+    display: none !important;
   }
 
-  /* Remove extra spacing in mobile timeline elements */
-  .vertical-timeline-element-content {
-    padding-bottom: 0.5rem !important;
+  /* Restore original mobile date positioning */
+  .vertical-timeline-element-date {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.85rem !important;
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
   }
 }

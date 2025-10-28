@@ -25,10 +25,12 @@ const Timeline = () => {
             return (
               <VerticalTimelineElement
                 key={element.key}
+                date={element.date}
+                dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
               >
-                <div className="timeline-date">{element.date}</div>
+                <div className="timeline-date-desktop">{element.date}</div>
                 <h3 className="title vertical-timeline-element-title">
                   {element.title}
                 </h3>
