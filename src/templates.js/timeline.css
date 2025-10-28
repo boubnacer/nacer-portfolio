@@ -73,30 +73,6 @@
     padding-right: 2rem;
     max-width: 1200px;
   }
-
-  /* Fix date alignment for alternating timeline elements */
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-date {
-    text-align: left !important;
-    left: 0 !important;
-    right: auto !important;
-  }
-
-  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-date {
-    text-align: right !important;
-    right: 0 !important;
-    left: auto !important;
-  }
-
-  /* Ensure proper positioning for content arrows */
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content-arrow {
-    border-left: 7px solid var(--bg-variant-color) !important;
-    border-right: none !important;
-  }
-
-  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content-arrow {
-    border-right: 7px solid var(--bg-variant-color) !important;
-    border-left: none !important;
-  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -104,64 +80,5 @@
     padding: 0 1rem; /* Reset padding on mobile */
     margin: 0 auto;
     max-width: 100%;
-  }
-
-  /* Mobile layout fixes */
-  .vertical-timeline-element-content {
-    padding: 1.5rem !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    width: 100% !important;
-    margin-top: 1rem !important;
-  }
-
-  .vertical-timeline-element-date {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    text-align: center !important;
-    margin-bottom: 1rem !important;
-    font-size: 0.85rem !important;
-    color: var(--primary-color) !important;
-    font-weight: 600 !important;
-  }
-
-  .project-link {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-    padding: 0.75rem 1rem;
-    font-size: 0.85rem;
-  }
-
-  /* Ensure proper spacing between content and date */
-  .vertical-timeline-element-content .vertical-timeline-element-content-inner {
-    padding-top: 0.5rem;
-  }
-
-  /* Mobile timeline adjustments */
-  .vertical-timeline-element {
-    margin-bottom: 2rem !important;
-  }
-
-  .vertical-timeline-element-icon {
-    width: 50px !important;
-    height: 50px !important;
-    margin-left: -25px !important;
-    z-index: 10 !important;
-  }
-
-  .vertical-timeline-element-icon svg {
-    width: 24px !important;
-    height: 24px !important;
-  }
-
-  /* Ensure icons are visible above content */
-  .vertical-timeline-element-icon {
-    position: relative !important;
-    z-index: 10 !important;
   }
 }
