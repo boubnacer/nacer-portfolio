@@ -106,12 +106,16 @@
     font-size: 0.85rem;
   }
 
-  /* Remove extra spacing in mobile timeline elements */
-  .vertical-timeline-element-content {
-    padding-bottom: 1rem !important;
+  /* Mobile-specific date positioning - move to bottom */
+  .timeline-date {
+    order: 999 !important;
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+    text-align: center !important;
   }
 
-  .timeline-date {
-    margin-bottom: 0.25rem !important;
+  /* Remove extra spacing in mobile timeline elements */
+  .vertical-timeline-element-content {
+    padding-bottom: 0.5rem !important;
   }
 }
