@@ -66,11 +66,11 @@
     inset 0 2px 0 rgba(37, 99, 235, 0.1), 0 3px 0 4px rgba(37, 99, 235, 0.1) !important;
 }
 
-/* Date styling */
-.vertical-timeline-element-date {
-  color: var(--primary-color) !important;
-  font-weight: 600 !important;
-  font-size: 0.9rem !important;
+/* Hide external date in desktop */
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 1170px) {
@@ -118,8 +118,10 @@
     left: auto !important;
     right: auto !important;
     transform: none !important;
-    text-align: center !important;
-    margin-bottom: 1rem !important;
+    text-align: left !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0.5rem !important;
     font-size: 0.85rem !important;
     color: var(--primary-color) !important;
     font-weight: 600 !important;
