@@ -14,6 +14,14 @@
   color: var(--primary-color) !important;
 }
 
+.timeline-date {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 0.5rem !important;
+  text-align: center;
+}
+
 .project-link {
   display: inline-block;
   margin-top: 0.5rem;
