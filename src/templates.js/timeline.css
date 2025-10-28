@@ -81,6 +81,11 @@
     padding-right: 2rem;
     max-width: 1200px;
   }
+
+  /* Move left side tabs slightly left to avoid overlap */
+  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content {
+    margin-right: 1rem !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
