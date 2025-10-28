@@ -105,4 +105,13 @@
     padding: 0.75rem 1rem;
     font-size: 0.85rem;
   }
+
+  /* Remove extra spacing in mobile timeline elements */
+  .vertical-timeline-element-content {
+    padding-bottom: 1rem !important;
+  }
+
+  .timeline-date {
+    margin-bottom: 0.25rem !important;
+  }
 }
