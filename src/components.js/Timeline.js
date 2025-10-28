@@ -37,6 +37,16 @@ const Timeline = () => {
                   {element.location}
                 </h2>
                 <p id="description">{element.descreption}</p>
+                {element.link && (
+                  <a 
+                    href={element.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    {element.linkText || "View Project"}
+                  </a>
+                )}
               </VerticalTimelineElement>
             );
           })}

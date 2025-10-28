@@ -145,6 +145,8 @@ export const timelineElements = [
     descreption:
       "Founded and launched a complete web service for helping people find lost objects. Features: geolocation, notifications, multi-language support, advanced search filters. Full-stack development with React, Node.js and MongoDB. Currently active and deployed.",
     buttonText: "Visit Website",
+    link: "https://mafqoudat.com",
+    linkText: "Visit the site",
     date: "2024 - Present",
     icon: "work",
   },
@@ -155,6 +157,8 @@ export const timelineElements = [
     descreption:
       "Embedded solution for vital parameters tracking using ESP32 and biometric sensors. Secure data transmission to cloud dashboard.",
     buttonText: "View Project",
+    link: "https://www.linkedin.com/posts/nacer-boubkraoui-a98011206_phase-1-of-an-iot-solution-for-obesity-care-activity-7314704870870056961-GLR9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRTvdQBCHEvu3DCBl31BMEAXxdB7F0snOs",
+    linkText: "View on LinkedIn",
     date: "2024",
     icon: "work",
   },
@@ -165,6 +169,8 @@ export const timelineElements = [
     descreption:
       "Document-based Q&A application using MERN stack. Features: document upload, OpenAI API integration, contextual response generation.",
     buttonText: "View Project",
+    link: "https://github.com/boubnacer/rag-llm-website",
+    linkText: "View on GitHub",
     date: "2024",
     icon: "work",
   },
@@ -175,6 +181,8 @@ export const timelineElements = [
     descreption:
       "Native mobile application with Java. Same RAG functionality as web version, optimized for mobile devices with intuitive UI.",
     buttonText: "View Project",
+    link: "https://github.com/boubnacer/smart-study-assistant",
+    linkText: "View on GitHub",
     date: "2024",
     icon: "work",
   },
@@ -193,7 +201,7 @@ export const timelineElements = [
     title: "Professional License in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
-      "Professional License with honors in Embedded Computer Systems",
+      "Professional License in Embedded Computer Systems",
     buttonText: "View Academic Projects",
     date: "2018 - 2021",
     icon: "school",
@@ -203,7 +211,7 @@ export const timelineElements = [
     title: "Baccalaureate in Physical and Chemical Sciences",
     location: "Lycée Al Arak, Taroudant",
     descreption:
-      "Baccalaureate with honors in Physical and Chemical Sciences",
+      "Baccalaureate in Physical and Chemical Sciences",
     buttonText: "View Academic Record",
     date: "June 2018",
     icon: "school",
