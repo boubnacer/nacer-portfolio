@@ -27,7 +27,7 @@ export const about = [
     icon: <GoProject />,
     title: "Projects",
     descri: "6+ Full-Stack MERN applications",
-    descri1: "4+ AI/ML, IoT & RAG systems",
+    descri1: "5+ AI/ML, IoT, Computer Vision & RAG systems",
   },
 ];
 
@@ -164,6 +164,18 @@ export const timelineElements = [
   },
   {
     id: 4,
+    title: "Autonomous Vehicle Vision System",
+    location: "Academic Project - Computer Vision & Robotics",
+    descreption:
+      "Complete autonomous driving system using Raspberry Pi 4. Features: real-time lane detection, traffic sign recognition (traffic lights, stop signs, speed limits), ultrasonic obstacle detection, and multi-sensor data fusion. Achieved 23+ FPS processing with 90%+ accuracy using OpenCV and Python.",
+    buttonText: "View Report",
+    link: "https://drive.google.com/drive/folders/1-h6ouVKozfkBjnrRgg5FXHqwoIagIjNy?usp=drive_link",
+    linkText: "View Project Report",
+    date: "2023",
+    icon: "work",
+  },
+  {
+    id: 5,
     title: "RAG Web Application",
     location: "Academic Project",
     descreption:
@@ -175,7 +187,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 5,
+    id: 6,
     title: "RAG Android Application",
     location: "Academic Project",
     descreption:
@@ -187,7 +199,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 6,
+    id: 7,
     title: "Frontend Developer Intern",
     location: "AJICOD, Dcheira El Jihadia",
     descreption:
@@ -197,7 +209,7 @@ export const timelineElements = [
     icon: "work",
   },
   {
-    id: 7,
+    id: 8,
     title: "Professional License in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
@@ -207,7 +219,7 @@ export const timelineElements = [
     icon: "school",
   },
   {
-    id: 8,
+    id: 9,
     title: "Baccalaureate in Physical and Chemical Sciences",
     location: "Lycée Al Arak, Taroudant",
     descreption:
@@ -246,30 +258,36 @@ export const technicalSkills = [
   },
   {
     id: 5,
-    title: "AI & Machine Learning",
-    description: "OpenAI API, RAG Systems, Document Processing",
+    title: "Computer Vision & Robotics",
+    description: "OpenCV, Real-time Image Processing, Lane Detection, Traffic Sign Recognition, Raspberry Pi, Multi-sensor Fusion",
     icon: "🤖"
   },
   {
     id: 6,
+    title: "AI & Machine Learning",
+    description: "OpenAI API, RAG Systems, Document Processing, Object Detection, Pattern Recognition",
+    icon: "🧠"
+  },
+  {
+    id: 7,
     title: "Mobile Development",
     description: "Android Studio, Java, Native Android Development",
     icon: "📱"
   },
   {
-    id: 7,
+    id: 8,
     title: "DevOps & Tools",
     description: "Git/GitHub, VS Code, MongoDB Atlas, Postman",
     icon: "🛠️"
   },
   {
-    id: 8,
+    id: 9,
     title: "Modeling & Design",
     description: "UML, Merise (Database Modeling)",
     icon: "📊"
   },
   {
-    id: 9,
+    id: 10,
     title: "Operating Systems",
     description: "Linux, Windows",
     icon: "🖥️"
