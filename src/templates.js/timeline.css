@@ -109,4 +109,55 @@
     margin: 0 auto;
     max-width: 100%;
   }
+
+  /* Mobile layout fixes */
+  .vertical-timeline-element-content {
+    padding: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+
+  .vertical-timeline-element-date {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    text-align: center !important;
+    margin-bottom: 1rem !important;
+    font-size: 0.85rem !important;
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+  }
+
+  .project-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Ensure proper spacing between content and date */
+  .vertical-timeline-element-content .vertical-timeline-element-content-inner {
+    padding-top: 0.5rem;
+  }
+
+  /* Mobile timeline adjustments */
+  .vertical-timeline-element {
+    margin-bottom: 2rem !important;
+  }
+
+  .vertical-timeline-element-icon {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: -20px !important;
+  }
+
+  .vertical-timeline-element-icon svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
 }
