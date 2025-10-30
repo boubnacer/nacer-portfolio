@@ -25,7 +25,7 @@ const About = () => {
           <div>
             <p>
               I'm Nacer, a Master's student in Embedded Artificial Intelligence at Université Ibn Zohr. 
-              I specialize in IoT systems, embedded programming with ESP32/Arduino, and AI/ML applications 
+              I specialize in IoT systems, embedded programming with ESP32, and AI/ML/DL applications 
               using TensorFlow. I hold a Professional License in Embedded Computer Systems.
             </p>
             <p>

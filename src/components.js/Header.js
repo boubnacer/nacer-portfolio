@@ -45,7 +45,7 @@ const Header = () => {
         </div>
         <div className="container header__details">
           <h1>Boubkraoui Nacer</h1>
-          <h5 className="text-light">Master's Student in Embedded Artificial Intelligence | Full-Stack Web Developer (React, Node.js, MongoDB) |  <br/> Passionate About AI, Embedded Ai & IoT Systems |<br/> Founder & CTO of mafqoudat.com</h5>
+          <h5 className="text-light">Master's Student in Embedded Artificial Intelligence |<br/> Full-Stack Web Developer (React, Node.js, MongoDB) |  <br/> Passionate About AI, Embedded Ai & IoT Systems |<br/> Founder & CTO of mafqoudat.com</h5>
           <div className="contact-cv__btns">
             <a href={Resume} className="btn" download>
               Download CV

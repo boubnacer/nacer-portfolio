@@ -1,7 +1,7 @@
 .nav__links {
   background: rgba(255, 255, 255, 0.1);
   width: auto;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   z-index: 2;
   display: grid;
   gap: 0.8rem;
@@ -135,32 +135,127 @@
   margin-top: 1rem;
 }
 
-.aside__socials a svg {
+.aside__socials a svg,
+.aside__socials a img {
   height: 1.5rem;
   width: 1.5rem;
   transition: var(--transition-normal);
 }
 
-/* Aside social icon colors */
-.aside__socials .icon-linkedin svg {
-  color: #0A66C2; /* LinkedIn blue */
+/* White background for specific social icons */
+.aside__socials .icon-linkedin a,
+.aside__socials .icon-facebook a,
+.aside__socials .icon-github a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.aside__socials .icon-facebook svg {
-  color: #1877F2; /* Facebook blue */
+.aside__socials .icon-linkedin a::before,
+.aside__socials .icon-facebook a::before,
+.aside__socials .icon-github a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  border-radius: 0.25rem;
+  z-index: -1;
 }
 
-.aside__socials .icon-github svg {
-  color: #333; /* GitHub black */
+.aside__socials .icon-x a {
+  position: relative;
+  background-color: white;
+  border-radius: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.aside__socials .icon-x svg {
-  color: #000000; /* X (formerly Twitter) black */
+/* Aside social icon colors - light mode */
+.aside__socials .icon-linkedin svg,
+.aside__socials .icon-linkedin svg path {
+  color: #0A66C2 !important; /* LinkedIn blue */
+  fill: #0A66C2 !important;
 }
 
-.aside__socials a:hover svg {
+.aside__socials .icon-facebook svg,
+.aside__socials .icon-facebook svg path {
+  color: #1877F2 !important; /* Facebook blue */
+  fill: #1877F2 !important;
+}
+
+.aside__socials .icon-github svg,
+.aside__socials .icon-github svg path {
+  color: #333 !important; /* GitHub black */
+  fill: #333 !important;
+}
+
+.aside__socials .icon-x img {
+  filter: brightness(0);
+}
+
+.aside__socials .icon-linkedin a:hover svg,
+.aside__socials .icon-facebook a:hover svg,
+.aside__socials .icon-github a:hover svg {
   transform: scale(1.15);
-  filter: brightness(1.2);
+  filter: none;
+}
+
+.aside__socials .icon-x a:hover img {
+  transform: scale(1.15);
+  filter: brightness(0) brightness(1.2);
+}
+
+/* Dark mode - keep white background and icon colors unchanged */
+[data-theme="dark"] .aside__socials .icon-linkedin a::before,
+[data-theme="dark"] .aside__socials .icon-facebook a::before,
+[data-theme="dark"] .aside__socials .icon-github a::before {
+  background-color: white;
+}
+
+[data-theme="dark"] .aside__socials .icon-x a {
+  background-color: white;
+}
+
+[data-theme="dark"] .aside__socials .icon-linkedin svg,
+[data-theme="dark"] .aside__socials .icon-linkedin svg path {
+  color: #0A66C2 !important;
+  fill: #0A66C2 !important;
+}
+
+[data-theme="dark"] .aside__socials .icon-facebook svg,
+[data-theme="dark"] .aside__socials .icon-facebook svg path {
+  color: #1877F2 !important;
+  fill: #1877F2 !important;
+}
+
+[data-theme="dark"] .aside__socials .icon-github svg,
+[data-theme="dark"] .aside__socials .icon-github svg path {
+  color: #333 !important;
+  fill: #333 !important;
+}
+
+/* Dark mode - Twitter icon only needs inversion */
+[data-theme="dark"] .aside__socials .icon-x img {
+  filter: brightness(0) invert(1);
+}
+
+/* Dark mode hover - keep other icons unchanged, only Twitter needs brightness */
+[data-theme="dark"] .aside__socials .icon-linkedin a:hover svg,
+[data-theme="dark"] .aside__socials .icon-facebook a:hover svg,
+[data-theme="dark"] .aside__socials .icon-github a:hover svg {
+  transform: scale(1.15);
+  filter: none;
+}
+
+[data-theme="dark"] .aside__socials .icon-x a:hover img {
+  transform: scale(1.15);
+  filter: brightness(0) invert(1) brightness(1.2);
 }
 
 /* Theme Toggle Button */

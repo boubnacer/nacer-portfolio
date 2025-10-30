@@ -14,11 +14,9 @@ const Footer = () => {
             'icon-x'
           ];
           return (
-            <div key={social.id}>
-              <a href={social.link} target="_blank" className={iconClasses[index]}>
-                <div>{social.icon}</div>
-              </a>
-            </div>
+            <a key={social.id} href={social.link} target="_blank" className={iconClasses[index]}>
+              {social.icon}
+            </a>
           );
         })}
       </div>

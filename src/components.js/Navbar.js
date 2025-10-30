@@ -6,7 +6,6 @@ import { RiServiceLine } from "react-icons/ri";
 import { MdOutlineMail } from "react-icons/md";
 import { BsSun, BsMoon } from "react-icons/bs";
 import { FaLanguage } from "react-icons/fa";
-import AsideSocials from "./AsideSocials";
 import { useGlobalContext } from "../context";
 
 const Navbar = () => {
@@ -107,7 +106,6 @@ const Navbar = () => {
             {isDarkMode ? <BsSun /> : <BsMoon />}
           </button>
         </div>
-        <AsideSocials />
       </div>
     </nav>
   );

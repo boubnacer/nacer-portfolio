@@ -4,7 +4,7 @@ import { socials } from "../data";
 
 const AsideSocials = () => {
   return (
-    <main>
+    <div className="aside__socials">
       {socials.map((social, index) => {
         const iconClasses = [
           'icon-linkedin',
@@ -13,14 +13,12 @@ const AsideSocials = () => {
           'icon-x'
         ];
         return (
-          <div key={social.id} className="aside__socials">
-            <a href={social.link} target="_blank" className={iconClasses[index]}>
-              <div>{social.icon}</div>
-            </a>
-          </div>
+          <a key={social.id} href={social.link} target="_blank" className={iconClasses[index]}>
+            {social.icon}
+          </a>
         );
       })}
-    </main>
+    </div>
   );
 };
 

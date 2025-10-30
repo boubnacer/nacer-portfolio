@@ -1,6 +1,7 @@
 import fr from "./assets/fr.png";
 import en from "./assets/en.png";
 import ar from "./assets/ar.png";
+import twitterIcon from "./assets/twitter.svg";
 import { HiOutlineMail } from "react-icons/hi";
 import { ImWhatsapp } from "react-icons/im";
 import { GoProject } from "react-icons/go";
@@ -20,13 +21,13 @@ export const about = [
     icon: <MdWork />,
     title: "Experience",
     descri: "2+ months professional internship",
-    descri1: "3+ years self-training & projects",
+    descri1: "4+ years self-training & projects",
   },
   {
     id: 2,
     icon: <GoProject />,
     title: "Projects",
-    descri: "6+ Full-Stack MERN applications",
+    descri: "2+ Full-Stack MERN applications",
     descri1: "5+ AI/ML, IoT, Computer Vision & RAG systems",
   },
 ];
@@ -45,7 +46,7 @@ export const socials = [
   { id: 3, icon: <FaGithubSquare />, link: "https://github.com/boubnacer" },
   {
     id: 4,
-    icon: <FaTwitter />,
+    icon: <img src={twitterIcon} alt="Twitter" />,
     link: "https://twitter.com/NacerBoubkraoui",
   },
 ];
@@ -64,7 +65,7 @@ export const footerSocials = [
   { id: 3, icon: <FiGithub />, link: "https://github.com/boubnacer" },
   {
     id: 4,
-    icon: <FaTwitter />,
+    icon: <img src={twitterIcon} alt="Twitter" />,
     link: "https://twitter.com/NacerBoubkraoui",
   },
 ];
