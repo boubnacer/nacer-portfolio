@@ -19,7 +19,7 @@ const Services = () => {
         <h5>What I Offer</h5>
         <h2>My Technical Skills</h2>
         <p className="skills__subtitle">
-          A comprehensive overview of my technical expertise across various domains
+          Technical skills and competencies developed through my master's program, including hands-on projects and coursework across diverse technology domains
         </p>
       </div>
 
@@ -73,6 +73,14 @@ const Services = () => {
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Big Data Processing</span>
             </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Data Analysis with Python</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Pandas & NumPy</span>
+            </div>
           </div>
         </div>
 
@@ -94,6 +102,10 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Computer Vision & OpenCV</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Artificial Vision & Image Processing</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -137,6 +149,14 @@ const Services = () => {
               <HiOutlineBadgeCheck className="skill__check" />
               <span>IoT Protocols (MQTT)</span>
             </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Linux Embedded & RTOS</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Edge & Fog Computing</span>
+            </div>
           </div>
         </div>
 
@@ -157,7 +177,67 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Parallel Computing</span>
+              <span>Advanced Computer Networks</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Embedded Systems Security</span>
+            </div>
+          </div>
+        </div>
+
+        {/* SoC & Parallel Programming */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <BiCodeBlock />
+          </div>
+          <h3>SoC & Parallel Programming</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>System-on-Chip (SoC) Design</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Parallel Programming</span>
+            </div>
+          </div>
+        </div>
+        
+
+        {/* Mobile Development */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <FaMobileAlt />
+          </div>
+          <h3>Mobile Development</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Android Development</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Cross-platform Development</span>
+            </div>
+          </div>
+        </div>
+
+
+        {/* Soft Skills & Digital Culture */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiOutlineBadgeCheck />
+          </div>
+          <h3>Soft Skills & Digital Culture</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Communication & Teamwork</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Digital Culture</span>
             </div>
           </div>
         </div>

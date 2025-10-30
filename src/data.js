@@ -139,6 +139,16 @@ export const timelineElements = [
     icon: "school",
   },
   {
+    id: 1.5,
+    title: "NRF24L01+ Performance & Security Analysis",
+    location: "Academic Project - Embedded Systems Security",
+    descreption:
+      "Analysis of NRF24L01+ transceiver performance and security vulnerabilities. Investigated 2.4GHz ISM band challenges, implemented jamming attacks and eavesdropping techniques. Evaluated countermeasures including software encryption and frequency hopping.",
+    buttonText: "View Project Report",
+    date: "2025 - Present",
+    icon: "work",
+  },
+  {
     id: 2,
     title: "Founder & CTO - Mafqoudat.com",
     location: "Digital Platform for Lost & Found Objects",
@@ -153,13 +163,13 @@ export const timelineElements = [
   {
     id: 3,
     title: "IoT Health Monitoring System",
-    location: "Academic Project",
+    location: "Academic Project - IoT and Sensor Technologies",
     descreption:
       "Embedded solution for vital parameters tracking using ESP32 and biometric sensors. Secure data transmission to cloud dashboard.",
     buttonText: "View Project",
     link: "https://www.linkedin.com/posts/nacer-boubkraoui-a98011206_phase-1-of-an-iot-solution-for-obesity-care-activity-7314704870870056961-GLR9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRTvdQBCHEvu3DCBl31BMEAXxdB7F0snOs",
     linkText: "View on LinkedIn",
-    date: "2024",
+    date: "April 2025 - July 23, 2025",
     icon: "work",
   },
   {
@@ -171,31 +181,31 @@ export const timelineElements = [
     buttonText: "View Report",
     link: "https://drive.google.com/drive/folders/1-h6ouVKozfkBjnrRgg5FXHqwoIagIjNy?usp=drive_link",
     linkText: "View Project Report",
-    date: "2023",
+    date: "April 2025 - July 23, 2025",
     icon: "work",
   },
   {
     id: 5,
     title: "RAG Web Application",
-    location: "Academic Project",
+    location: "Academic Project - Deep Learning",
     descreption:
       "Document-based Q&A application using MERN stack. Features: document upload, OpenAI API integration, contextual response generation.",
     buttonText: "View Project",
     link: "https://github.com/boubnacer/rag-llm-website",
     linkText: "View on GitHub",
-    date: "2024",
+    date: "June 2025 - July 13, 2025",
     icon: "work",
   },
   {
     id: 6,
     title: "RAG Android Application",
-    location: "Academic Project",
+    location: "Academic Project - Mobile Programming",
     descreption:
       "Native mobile application with Java. Same RAG functionality as web version, optimized for mobile devices with intuitive UI.",
     buttonText: "View Project",
     link: "https://github.com/boubnacer/smart-study-assistant",
     linkText: "View on GitHub",
-    date: "2024",
+    date: "25 June, 2025 - July 20, 2025",
     icon: "work",
   },
   {
