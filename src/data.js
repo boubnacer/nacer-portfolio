@@ -36,7 +36,7 @@ export const socials = [
   {
     id: 1,
     icon: <BsLinkedin />,
-    link: "https://www.linkedin.com/in/nacer-boubkraoui-a98011206/",
+    link: "https://www.linkedin.com/in/nacer-boubkraoui/",
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const footerSocials = [
   {
     id: 1,
     icon: <FaLinkedinIn />,
-    link: "https://www.linkedin.com/in/nacer-boubkraoui-a98011206/",
+    link: "https://www.linkedin.com/in/nacer-boubkraoui/",
   },
   {
     id: 2,
@@ -116,8 +116,8 @@ export const contacts = [
     id: 1,
     icon: <HiOutlineMail />,
     title: "Email",
-    email: "boubkraoui.nacer@gmail.com",
-    link: "mailto:boubkraoui.nacer@gmail.com",
+    email: "nacer.boubkraoui.43@edu.uiz.ac.ma",
+    link: "mailto:nacer.boubkraoui.43@edu.uiz.ac.ma",
   },
   {
     id: 2,
@@ -142,10 +142,10 @@ export const timelineElements = [
   {
     id: 1.5,
     title: "NRF24L01+ Performance & Security Analysis",
-    location: "Academic Project - Embedded Systems Security",
+    location: "Embedded Systems Security",
     descreption:
       "Analysis of NRF24L01+ transceiver performance and security vulnerabilities. Investigated 2.4GHz ISM band challenges, implemented jamming attacks and eavesdropping techniques. Evaluated countermeasures including software encryption and frequency hopping.",
-    buttonText: "View Project Report",
+    buttonText: "View on Google Drive",
     date: "2025 - Present",
     icon: "work",
   },
@@ -158,17 +158,17 @@ export const timelineElements = [
     buttonText: "Visit Website",
     link: "https://mafqoudat.com",
     linkText: "Visit the site",
-    date: "2024 - Present",
+    date: "2022 - Present",
     icon: "work",
   },
   {
     id: 3,
     title: "IoT Health Monitoring System",
-    location: "Academic Project - IoT and Sensor Technologies",
+    location: "IoT and Sensor Technologies",
     descreption:
       "Embedded solution for vital parameters tracking using ESP32 and biometric sensors. Secure data transmission to cloud dashboard.",
     buttonText: "View Project",
-    link: "https://www.linkedin.com/posts/nacer-boubkraoui-a98011206_phase-1-of-an-iot-solution-for-obesity-care-activity-7314704870870056961-GLR9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADRTvdQBCHEvu3DCBl31BMEAXxdB7F0snOs",
+    link: "https://www.linkedin.com/posts/nacer-boubkraoui_phase-1-of-an-iot-solution-for-obesity-care-activity-7314704870870056961-xjxV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRTvdQBCHEvu3DCBl31BMEAXxdB7F0snOs",
     linkText: "View on LinkedIn",
     date: "April 2025 - July 23, 2025",
     icon: "work",
@@ -176,19 +176,19 @@ export const timelineElements = [
   {
     id: 4,
     title: "Autonomous Vehicle Vision System",
-    location: "Academic Project - Computer Vision & Robotics",
+    location: "Computer Vision & Robotics",
     descreption:
       "Complete autonomous driving system using Raspberry Pi 4. Features: real-time lane detection, traffic sign recognition (traffic lights, stop signs, speed limits), ultrasonic obstacle detection, and multi-sensor data fusion. Achieved 23+ FPS processing with 90%+ accuracy using OpenCV and Python.",
     buttonText: "View Report",
     link: "https://drive.google.com/drive/folders/1-h6ouVKozfkBjnrRgg5FXHqwoIagIjNy?usp=drive_link",
-    linkText: "View Project Report",
+    linkText: "View on Google Drive",
     date: "April 2025 - July 23, 2025",
     icon: "work",
   },
   {
     id: 5,
     title: "RAG Web Application",
-    location: "Academic Project - Deep Learning",
+    location: "Deep Learning",
     descreption:
       "Document-based Q&A application using MERN stack. Features: document upload, OpenAI API integration, contextual response generation.",
     buttonText: "View Project",
@@ -200,7 +200,7 @@ export const timelineElements = [
   {
     id: 6,
     title: "RAG Android Application",
-    location: "Academic Project - Mobile Programming",
+    location: "Mobile Programming",
     descreption:
       "Native mobile application with Java. Same RAG functionality as web version, optimized for mobile devices with intuitive UI.",
     buttonText: "View Project",

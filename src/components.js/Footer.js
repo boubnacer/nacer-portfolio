@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
       <div>
         <small className="footer__copyright">
-          &copy; Boubkraoui Nacer, 2022.
+          &copy; Boubkraoui Nacer, 2025.
         </small>
       </div>
     </footer>
