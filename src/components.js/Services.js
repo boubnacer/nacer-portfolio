@@ -77,10 +77,6 @@ const Services = () => {
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Data Analysis with Python</span>
             </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Pandas & NumPy</span>
-            </div>
           </div>
         </div>
 
@@ -114,10 +110,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>TinyML & Model Optimization</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Data Analysis (Pandas, NumPy)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -174,10 +166,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Encryption & Security Protocols</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Advanced Computer Networks</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -252,10 +240,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>VS Code</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Postman</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />

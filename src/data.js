@@ -288,7 +288,7 @@ export const technicalSkills = [
   {
     id: 8,
     title: "DevOps & Tools",
-    description: "Git/GitHub, VS Code, MongoDB Atlas, Postman",
+    description: "Git/GitHub, VS Code, MongoDB Atlas",
     icon: "🛠️"
   },
   {
