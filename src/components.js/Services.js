@@ -89,7 +89,7 @@ const Services = () => {
           <div className="skill__items">
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>Deep Learning (CNN, RNN, LSTM)</span>
+              <span>Deep Learning (CNN, RNN, LSTM, GRU)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
