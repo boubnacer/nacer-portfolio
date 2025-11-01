@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import me from "../assets/me.jpg";
-import meLight from "../assets/meLight.jpg";
+import meLight from "../assets/meLight.png";
 import "../templates.js/header.css";
 import Resume from "../assets/Resume.pdf";
 import { useGlobalContext } from "../context";
