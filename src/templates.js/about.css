@@ -131,6 +131,56 @@
   animation: fadeInRight 0.8s ease-out 0.3s both;
 }
 
+/* ----------------MEDIA QUERIES FOR 1920x1080 AND LARGER SCREENS */
+@media screen and (min-width: 1920px) {
+  .about__container {
+    max-width: 1600px;
+    gap: var(--spacing-2xl);
+    padding-left: 12rem;
+    padding-right: 4rem;
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .about__card {
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+  }
+
+  .about__icon {
+    font-size: 3.5rem;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--spacing-md);
+  }
+
+  .about__card h5 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about__card small {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .about__content p {
+    font-size: 1.25rem;
+    line-height: 2;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .about__content .btn {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
 /* ----------------MEDIA QUERIES md */
 @media screen and (max-width: 1024px) {
   .about__container {

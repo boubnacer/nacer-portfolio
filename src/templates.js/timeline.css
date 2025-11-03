@@ -66,6 +66,60 @@
     inset 0 2px 0 rgba(37, 99, 235, 0.1), 0 3px 0 4px rgba(37, 99, 235, 0.1) !important;
 }
 
+/* ----------------MEDIA QUERIES FOR 1920x1080 AND LARGER SCREENS */
+@media screen and (min-width: 1920px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 85%;
+    max-width: 1600px;
+    padding-left: 12rem;
+    padding-right: 4rem;
+  }
+
+  .vertical-timeline-element-content {
+    padding: 2.5rem !important;
+    font-size: 1.125rem !important;
+  }
+
+  .title {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .location {
+    font-size: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #description {
+    font-size: 1.125rem !important;
+    line-height: 1.8 !important;
+  }
+
+  .timeline-date-desktop {
+    font-size: 1.125rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .project-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+    margin-top: 0.75rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .vertical-timeline-element-icon {
+    width: 60px !important;
+    height: 60px !important;
+    left: 50% !important;
+    margin-left: -30px !important;
+  }
+
+  .vertical-timeline-element-icon svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
 /* Hide external date in desktop */
 @media only screen and (min-width: 1170px) {
   .vertical-timeline-element-date {
@@ -73,7 +127,7 @@
   }
 }
 
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1170px) and (max-width: 1919px) {
   .vertical-timeline.vertical-timeline--two-columns {
     width: 90%;
     margin: 0 auto;

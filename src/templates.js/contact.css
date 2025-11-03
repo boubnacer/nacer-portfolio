@@ -86,6 +86,60 @@ textarea:focus {
   box-shadow: 0 0 0 3px var(--primary-variant-color);
 }
 
+/* ----------------MEDIA QUERIES FOR 1920x1080 AND LARGER SCREENS */
+@media screen and (min-width: 1920px) {
+  .container.contact__container {
+    width: 75%;
+    max-width: 1600px;
+    gap: 15%;
+    padding-left: 12rem;
+    padding-right: 4rem;
+  }
+
+  .contact__options {
+    gap: 1.5rem;
+  }
+
+  .contact {
+    padding: 1.75rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .contact__icon {
+    font-size: 2rem;
+  }
+
+  .contact h2 {
+    font-size: 1.25rem;
+  }
+
+  small {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  form {
+    gap: 1.5rem;
+  }
+
+  input,
+  textarea {
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    font-size: 1.125rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 0 4px var(--primary-variant-color);
+  }
+
+  .container.contact__container .btn {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
 /* ----------------MEDIA QUERIES md */
 @media screen and (max-width: 1024px) {
   .container.contact__container {

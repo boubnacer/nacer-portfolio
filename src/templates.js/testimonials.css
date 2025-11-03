@@ -284,6 +284,114 @@
 }
 
 /* Responsive Design */
+
+/* Large Screens 1920x1080+ */
+@media screen and (min-width: 1920px) {
+  .languages__section {
+    padding: 6rem 0;
+  }
+
+  .languages__header {
+    padding-left: 12rem;
+    padding-right: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .languages__icon {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .languages__icon svg {
+    font-size: 2rem;
+  }
+
+  .languages__header h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .languages__header h2::after {
+    width: 6rem;
+    height: 3px;
+  }
+
+  .languages__subtitle {
+    font-size: 1.375rem;
+    max-width: 800px;
+    line-height: 1.75;
+  }
+
+  .languages__container {
+    padding-left: 12rem;
+    padding-right: 4rem;
+    max-width: 1600px;
+  }
+
+  .languages__grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+    max-width: 1600px;
+  }
+
+  .language__card {
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .language__flag {
+    width: 75px;
+    height: 50px;
+    margin-bottom: 2rem;
+  }
+
+  .language__name {
+    font-size: 1.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .level__badge {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .language__proficiency {
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .proficiency__bar {
+    height: 10px;
+  }
+
+  .proficiency__percentage {
+    font-size: 1.125rem;
+  }
+
+  .language__skills {
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .skill__tag {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .language__description {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+  .language__globe {
+    font-size: 1.5rem;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .languages__header {
     padding-left: 1rem; /* Reset padding on mobile */

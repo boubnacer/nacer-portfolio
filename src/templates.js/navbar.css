@@ -316,6 +316,61 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
+/* ----------------MEDIA QUERIES FOR 1920x1080 AND LARGER SCREENS */
+@media screen and (min-width: 1920px) {
+  .sidebar {
+    left: 4%;
+  }
+
+  .nav__links {
+    padding: 2.5rem 1.25rem;
+    gap: 1rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .nav__links a {
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .nav__links a svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .hide__nav {
+    padding: 0.625rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hide__nav svg {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .aside__socials {
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  .aside__socials a svg,
+  .aside__socials a img {
+    height: 1.75rem;
+    width: 1.75rem;
+  }
+
+  .theme-toggle {
+    padding: 0.625rem;
+    font-size: 1.25rem;
+  }
+
+  .theme-toggle svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .nav__links {
     display: flex;

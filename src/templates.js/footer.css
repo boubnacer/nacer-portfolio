@@ -129,6 +129,39 @@ footer a {
   color: var(--bg-color);
 }
 
+/* ----------------MEDIA QUERIES FOR 1920x1080 AND LARGER SCREENS */
+@media screen and (min-width: 1920px) {
+  footer {
+    max-width: 1600px;
+    padding: 4rem 0;
+    margin-top: 9rem;
+    font-size: 1.125rem;
+    padding-left: 12rem;
+    padding-right: 4rem;
+  }
+
+  .footer__socials {
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer__socials a {
+    padding: 1rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .footer__socials a svg,
+  .footer__socials a img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .footer__copyright {
+    margin-bottom: 3.5rem;
+    font-size: 1.125rem;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   footer {
     padding: 3rem 1rem; /* Reset padding on mobile */
