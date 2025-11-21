@@ -150,6 +150,16 @@ export const timelineElements = [
     icon: "work",
   },
   {
+    id: 1.6,
+    title: "Real-time Medical Monitoring using Fog Computing",
+    location: "Edge and Fog Computing",
+    descreption:
+      "The Raspberry Pi serves as a gateway between ESP32 and the cloud. It receives data from ESP32 via WiFi/LoRa, filters and pre-processes data before sending to the cloud, detects anomalies and sends immediate alerts, and stores data locally in case of internet failure.",
+    buttonText: "View Project",
+    date: "November 21, 2025 - Present",
+    icon: "work",
+  },
+  {
     id: 2,
     title: "Founder & CTO - Mafqoudat.com",
     location: "Digital Platform for Lost & Found Objects",
