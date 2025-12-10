@@ -4,7 +4,7 @@ import About from "./components.js/About";
 import Contact from "./components.js/Contact";
 import Footer from "./components.js/Footer";
 import Services from "./components.js/Services";
-import Languages from "./components.js/Testimonials";
+// import Languages from "./components.js/Testimonials"; // Languages section hidden
 import { useState } from "react";
 import Timeline from "./components.js/Timeline";
 import AppProvider from "./context";
@@ -19,7 +19,6 @@ function App() {
       <Timeline />
       <Services />
 
-      <Languages />
       <Contact />
       <Footer />
     </AppProvider>
