@@ -230,6 +230,44 @@ const Services = () => {
           </div>
         </div>
 
+        {/* MLOps & DevOps */}
+        <div className="skill__card">
+          <div className="skill__icon">
+            <HiCloud />
+          </div>
+          <h3>MLOps & DevOps</h3>
+          <div className="skill__items">
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Docker & Containerization</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Apache Kafka & Streaming</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>MLflow & Experiment Tracking</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Model Deployment & Monitoring</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Git/GitHub</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>VS Code</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Postman</span>
+            </div>
+          </div>
+        </div>
+
         {/* Development Tools */}
         <div className="skill__card">
           <div className="skill__icon">
@@ -248,10 +286,6 @@ const Services = () => {
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Arduino IDE</span>
-            </div>
-            <div className="skill__item">
-              <HiOutlineBadgeCheck className="skill__check" />
-              <span>Git/GitHub</span>
             </div>
           </div>
         </div>

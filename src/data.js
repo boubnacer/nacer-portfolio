@@ -151,10 +151,10 @@ export const timelineElements = [
   },
   {
     id: 1.6,
-    title: "Real-time Medical Monitoring using Fog Computing",
+    title: "Intelligent Edge Health Gateway (IoT & AI)",
     location: "Edge and Fog Computing",
     descreption:
-      "The Raspberry Pi serves as a gateway between ESP32 and the cloud. It receives data from ESP32 via WiFi/LoRa, filters and pre-processes data before sending to the cloud, detects anomalies and sends immediate alerts, and stores data locally in case of internet failure.",
+      "Edge computing architecture for real-time medical monitoring. ESP32 captures vitals (SpO2, BPM, Temperature) and activity data, processed locally on Raspberry Pi gateway with MQTT, Node-RED, InfluxDB, and Grafana for low-latency healthcare analytics.",
     buttonText: "View Project",
     date: "November 21, 2025 - Present",
     icon: "work",
@@ -268,13 +268,13 @@ export const technicalSkills = [
   {
     id: 3,
     title: "Programming Languages",
-    description: "JavaScript, Python, C, Java",
+    description: "JavaScript, Python, C, Java, C++",
     icon: "💻"
   },
   {
     id: 4,
     title: "IoT & Embedded Systems",
-    description: "ESP32, Arduino, C Programming, Biometric Sensors",
+    description: "ESP32, Arduino, C Programming, Biometric Sensors, MQTT, JSON, I2C, WiFi Station Mode",
     icon: "🔌"
   },
   {
@@ -286,7 +286,7 @@ export const technicalSkills = [
   {
     id: 6,
     title: "AI & Machine Learning",
-    description: "OpenAI API, RAG Systems, Document Processing, Object Detection, Pattern Recognition",
+    description: "OpenAI API, RAG Systems, Document Processing, Object Detection, Pattern Recognition, Scikit-learn, Isolation Forest, Unsupervised Learning, Sensor Fusion",
     icon: "🧠"
   },
   {
@@ -297,18 +297,24 @@ export const technicalSkills = [
   },
   {
     id: 8,
-    title: "DevOps & Tools",
-    description: "Git/GitHub, VS Code, MongoDB Atlas",
-    icon: "🛠️"
+    title: "Edge Computing & Data Engineering",
+    description: "Node-RED, InfluxDB, Grafana, Time-Series Databases, Data Visualization, Distributed Edge Architecture",
+    icon: "🔧"
   },
   {
     id: 9,
+    title: "MLOps & DevOps",
+    description: "Docker, Apache Kafka, MLflow, Model Deployment & Monitoring, Git/GitHub, VS Code, Postman, Linux Administration",
+    icon: "🚀"
+  },
+  {
+    id: 10,
     title: "Modeling & Design",
     description: "UML, Merise (Database Modeling)",
     icon: "📊"
   },
   {
-    id: 10,
+    id: 11,
     title: "Operating Systems",
     description: "Linux, Windows",
     icon: "🖥️"
