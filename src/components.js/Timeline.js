@@ -24,7 +24,7 @@ const Timeline = () => {
             let isWorkIcon = element.icon === "work";
             return (
               <VerticalTimelineElement
-                key={element.key}
+                key={element.id}
                 date={element.date}
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}

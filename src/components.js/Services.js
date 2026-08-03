@@ -37,7 +37,7 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
-              <span>C (Embedded Systems)</span>
+              <span>C & C++ (Embedded Systems)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
@@ -113,6 +113,14 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
+              <span>TensorFlow Lite for Microcontrollers (TFLM)</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Model Quantization (INT8 Post-Training Quantization)</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
               <span>RAG Systems</span>
             </div>
           </div>
@@ -131,11 +139,19 @@ const Services = () => {
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
+              <span>ESP-IDF & FreeRTOS (ESP32-S3)</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
               <span>Circuit Design</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />
               <span>Microcontroller Programming</span>
+            </div>
+            <div className="skill__item">
+              <HiOutlineBadgeCheck className="skill__check" />
+              <span>Embedded Digital Signal Processing (FFT, Mel-Spectrogram)</span>
             </div>
             <div className="skill__item">
               <HiOutlineBadgeCheck className="skill__check" />

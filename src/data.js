@@ -20,7 +20,7 @@ export const about = [
     id: 1,
     icon: <MdWork />,
     title: "Experience",
-    descri: "2+ months professional internship",
+    descri: "5-month Embedded AI internship (PFE)",
     descri1: "4+ years self-training & projects",
   },
   {
@@ -28,7 +28,7 @@ export const about = [
     icon: <GoProject />,
     title: "Projects",
     descri: "2+ Full-Stack MERN applications",
-    descri1: "5+ AI/ML, IoT, Computer Vision & RAG systems",
+    descri1: "6+ AI/ML, IoT, Computer Vision, TinyML & RAG systems",
   },
 ];
 
@@ -134,10 +134,20 @@ export const timelineElements = [
     title: "Master's Degree in Embedded Artificial Intelligence",
     location: "Université Ibn Zohr",
     descreption:
-      "Currently pursuing Master's degree in Embedded Artificial Intelligence.",
+      "Graduated with a Master's degree in Embedded Artificial Intelligence, defended on 04/07/2026. End-of-studies project: real-time snoring detection system deployed on an ESP32-S3 microcontroller using the TinyML paradigm.",
     buttonText: "View AI Projects",
-    date: "2024 - Present",
+    date: "2024 - 2026",
     icon: "school",
+  },
+  {
+    id: 1.1,
+    title: "PFE Intern — Edge AI for Sleep Health Monitoring",
+    location: "SiliconeSignal Technologies, Meknès",
+    descreption:
+      "End-of-studies internship: designed and deployed a real-time snoring detection system running entirely on an ESP32-S3 microcontroller, with no cloud dependency and no hardware AI accelerator. Built the full pipeline — PDM microphone capture, embedded C++ DSP (FFT, mel-spectrogram), and an INT8-quantized CNN via TensorFlow Lite for Microcontrollers — through six iterative retraining versions, reaching 97.80% test accuracy, 97.0% snore recall, a ROC AUC of 0.9976, and a 1-second real-time detection latency.",
+    buttonText: "View Project",
+    date: "February 2026 - July 2026",
+    icon: "work",
   },
   {
     id: 1.5,

@@ -24,12 +24,20 @@ const About = () => {
           </div>
           <div>
             <p>
-              I'm Nacer, a Master's student in Embedded Artificial Intelligence at Université Ibn Zohr. 
-              I specialize in IoT systems, embedded programming with ESP32, and AI/ML/DL applications 
-              using TensorFlow. I hold a Professional License in Embedded Computer Systems.
+              I'm Nacer, an Embedded AI Engineer holding a Master's degree in Embedded Artificial
+              Intelligence from Université Ibn Zohr. I specialize in IoT systems, embedded programming
+              with ESP32, and AI/ML/DL applications using TensorFlow. I hold a Professional License in
+              Embedded Computer Systems.
             </p>
             <p>
-              As Founder & CTO of Mafqoudat.com, I've successfully launched a deployed platform, 
+              For my end-of-studies project at SiliconeSignal Technologies, I designed and deployed a
+              real-time snoring detection system running entirely on an ESP32-S3 microcontroller — a full
+              TinyML pipeline from embedded C++ digital signal processing to an INT8-quantized CNN via
+              TensorFlow Lite for Microcontrollers, reaching 97.80% accuracy with 1-second detection
+              latency and zero cloud dependency.
+            </p>
+            <p>
+              As Founder & CTO of Mafqoudat.com, I've successfully launched a deployed platform,
               demonstrating my ability to build and deploy real-world solutions.
             </p>
             <a href="#contact" className="btn btn-primary">
