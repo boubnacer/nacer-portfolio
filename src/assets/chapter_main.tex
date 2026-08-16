@@ -1,0 +1,315 @@
+% ============================================================
+% Main document --- chapter_main.tex  (UPDATED)
+% Document structure:
+%   intro.tex           --- General Introduction
+%   chapter1.tex        --- Ch. 1: Project Context and Hardware Environment
+%   chapter2.tex        --- Ch. 2: State of the Art
+%   chapter4.tex        --- Ch. 3: Baseline Quantization Strategy and PTQ Pipeline
+%   chapter5.tex        --- Ch. 4: Embedded Deployment on the ESP32-S3
+%   chapter6.tex        --- Ch. 5: Audio Preprocessing Pipeline
+%   chapter7.tex        --- Ch. 6: Model Retraining: Track B
+%   conclusion.tex      --- General Conclusion and Perspectives
+%   annexes.tex         --- Appendices A and B
+% ============================================================
+\documentclass[11pt,a4paper,openany]{book}
+
+% ---------- XCOLOR (must be first to avoid option clashes) ----------
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+
+% ---------- CORE PACKAGES ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\setlength{\parskip}{0pt}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{mdframed}
+\usepackage{enumitem}
+\usepackage{titlesec}
+  \titlespacing*{\section}{0pt}{14pt}{6pt}
+  \titlespacing*{\subsection}{0pt}{10pt}{4pt}
+  \titlespacing*{\subsubsection}{0pt}{8pt}{3pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                          % clear all header and footer fields
+\fancyfoot[C]{\thepage}             % page number centered at bottom
+\renewcommand{\headrulewidth}{0pt}  % no header line
+\renewcommand{\footrulewidth}{0pt}  % no footer line
+
+% Override the "plain" style too (used on chapter opening pages)
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+\usepackage{pgf-pie}
+
+% Arabic abstract support (optional --- comment out if not needed)
+% \usepackage{arabtex}
+% \usepackage{utf8}
+
+% ---------- COLORS ----------
+\definecolor{pipblue}{RGB}{12,68,124}       \definecolor{pipbluebdr}{RGB}{133,183,235}  \definecolor{pipblueT}{RGB}{181,212,244}
+\definecolor{pipgreen}{RGB}{8,80,65}        \definecolor{pipgreenbdr}{RGB}{93,202,165}  \definecolor{pipgreenT}{RGB}{159,225,203}
+\definecolor{pippurple}{RGB}{60,52,137}     \definecolor{pippurplebdr}{RGB}{175,169,236}\definecolor{pippurpleT}{RGB}{206,203,246}
+\definecolor{pipbrown}{RGB}{113,43,19}      \definecolor{pipbrownbdr}{RGB}{240,153,123} \definecolor{pipbrownT}{RGB}{245,196,179}
+\definecolor{pipgray}{RGB}{68,68,65}        \definecolor{pipgraybdr}{RGB}{180,178,169}  \definecolor{pipgrayT}{RGB}{211,209,199}
+\definecolor{pipamber}{RGB}{99,56,6}        \definecolor{pipamberbdr}{RGB}{239,159,39}  \definecolor{pipamberT}{RGB}{250,199,117}
+\definecolor{piplime}{RGB}{39,80,10}        \definecolor{piplimebdr}{RGB}{151,196,89}   \definecolor{piplimeT}{RGB}{192,221,151}
+\definecolor{pipdark}{RGB}{38,38,36}        \definecolor{piplighttxt}{RGB}{194,192,182} \definecolor{pipwhitetxt}{RGB}{250,249,245}
+\definecolor{aiblue}{RGB}{30,100,200}
+\definecolor{lightblue}{RGB}{220,235,255}
+\definecolor{successgreen}{RGB}{0,150,80}
+\definecolor{errred}{RGB}{200,40,40}
+\definecolor{warnorange}{RGB}{230,120,20}
+\definecolor{lightorange}{RGB}{255,240,220}
+\definecolor{codegray}{RGB}{245,245,250}
+\definecolor{darkgray}{RGB}{50,50,50}
+\definecolor{conceptpurple}{RGB}{120,40,180}
+\definecolor{lightpurple}{RGB}{240,225,255}
+% --- colors for chapter4 & chapter5 ---
+\definecolor{primaryblue}{RGB}{30,80,160}
+\definecolor{lightgraybg}{RGB}{245,245,245}
+\definecolor{warningorange}{RGB}{200,100,0}
+\definecolor{BrickRed}{RGB}{200,50,50}
+\definecolor{ForestGreen}{RGB}{34,139,34}
+\definecolor{Goldenrod}{RGB}{218,165,32}
+\definecolor{Crimson}{RGB}{220,20,60}
+\definecolor{DarkOrchid}{RGB}{153,50,204}
+\definecolor{SteelBlue}{RGB}{70,130,180}
+\definecolor{RoyalBlue}{RGB}{65,105,225}
+\definecolor{teal}{RGB}{0,128,128}
+\definecolor{violet}{RGB}{238,130,238}
+\definecolor{errorred}{RGB}{180,30,30}
+\definecolor{errorboxbg}{RGB}{255,227,227}
+\definecolor{successboxbg}{RGB}{232,255,232}
+\definecolor{terminalblack}{RGB}{20,20,20}
+\definecolor{terminalgreen}{RGB}{0,200,80}
+\definecolor{terminalyellow}{RGB}{255,200,0}
+\definecolor{terminalred}{RGB}{255,80,80}
+
+% ---------- TIKZ & PGFPLOTS ----------
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, fit, backgrounds, patterns}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ---------- LISTING STYLES (chapter5) ----------
+\lstdefinestyle{terminal}{
+  backgroundcolor=\color{terminalblack},
+  basicstyle=\ttfamily\small\color{terminalgreen},
+  keywordstyle=\color{terminalyellow},
+  stringstyle=\color{terminalred},
+  commentstyle=\color{terminalgreen!70},
+  breaklines=true,
+  frame=none,
+  xleftmargin=8pt,
+  xrightmargin=8pt,
+  aboveskip=6pt,
+  belowskip=6pt
+}
+\lstdefinestyle{code}{
+  backgroundcolor=\color{lightgraybg},
+  basicstyle=\ttfamily\small\color{darkgray},
+  keywordstyle=\color{primaryblue},
+  stringstyle=\color{ForestGreen},
+  commentstyle=\color{pipgray}\itshape,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{primaryblue},
+  framerule=0.4pt,
+  xleftmargin=8pt,
+  xrightmargin=8pt,
+  aboveskip=6pt,
+  belowskip=6pt
+}
+
+% ---------- RESULT BOX (chapter4) ----------
+\newmdenv[
+  backgroundcolor=lightgraybg,
+  linecolor=primaryblue,
+  linewidth=1pt,
+  leftmargin=0pt,
+  rightmargin=0pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt
+]{resultbox}
+
+% ---------- ERROR / SUCCESS BOXES (chapter5) ----------
+\newmdenv[
+  backgroundcolor=errorboxbg,
+  linecolor=errorred,
+  linewidth=1pt,
+  leftmargin=0pt,
+  rightmargin=0pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt
+]{errorbox}
+
+\newmdenv[
+  backgroundcolor=successboxbg,
+  linecolor=ForestGreen,
+  linewidth=1pt,
+  leftmargin=0pt,
+  rightmargin=0pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt
+]{successbox}
+
+% ---------- TABLE ICON COMMANDS (chapter6) ----------
+\newcommand{\ok}{\textcolor{ForestGreen}{\textbf{\checkmark}}}
+\newcommand{\bad}{\textcolor{BrickRed}{\textbf{$\times$}}}
+
+% ---------- METADATA ----------
+\title{TinyML Snoring Detection System}
+\author{Nacer Boubkraoui}
+\date{May 2026}
+
+% ============================================================
+\begin{document}
+\raggedbottom
+% ============================================================
+\pagestyle{fancy}
+
+% ----------------------------------------------------------
+% TITLE PAGE
+% ----------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{0.3cm}
+
+\begin{flushright}
+\begin{tabular}{c|c|c|c|c|c|c|c|c|}
+N\textsuperscript{o}: & 7 & 9 & 6 & / & 2 & 0 & 2 & 6 \\
+\cline{2-9}
+\end{tabular}
+\end{flushright}
+
+\vspace{1.5cm}
+
+% ---- LOGOS: University (left, kept) | Company (right, replaced) ----
+\begin{minipage}{0.2\textwidth}
+    \centering
+    \includegraphics[width=3cm]{logibn.jpeg}
+\end{minipage}
+\hfill
+\begin{minipage}{0.55\textwidth}
+    \centering
+    {\large Ibn Zohr University}\\
+    \textsc{Faculty of Applied Sciences}\\
+    \textsc{Department of Computer Engineering and Intelligent Systems}\\
+    \textsc{-- Ait Melloul --}\\
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+    \centering
+    \includegraphics[width=4cm]{silic.PNG}\\[0.15cm]
+    \makebox[4cm][c]{\footnotesize SiliconeSignal}\\
+    \makebox[4cm][c]{\footnotesize Technologies, Meknes}
+\end{minipage}
+
+
+
+\vskip1.6cm
+
+{\large Master's Degree in \textbf{Embedded Artificial Intelligence}}
+
+\vskip0.4cm
+
+{*****}
+
+\vskip0.8cm
+\textbf{End-of-Studies Project Report}\\
+\vskip1.2cm
+{\Large\textbf{Edge AI for Sleep Health Monitoring: Design and Deployment of a Real-Time Snoring Detection System on an ESP32-S3 Microcontroller Using the TinyML Paradigm}}\\
+
+\vspace{15mm}
+\centerline{Carried out by:}
+
+\centerline{\small \bf Nacer BOUBKRAOUI}
+\vspace{5mm}
+\centerline{\small \bf Defended on $04/07/2026$ before the jury composed of}
+
+\hskip-10mm
+\begin{center}
+\begin{tabular}{lll}
+   \bf{\hspace{-3mm}President} & \bf{A.KARKOUCH} & \bf{Professor, Faculty of Applied Sciences, Ait Melloul}\\
+   \bf{\hspace{-3mm}Examiner}       & \bf{M.HSSAISOUNE} & \bf{Professor, Faculty of Applied Sciences, Ait Melloul}\\
+   \bf{\hspace{-3mm}Examiner}       & \bf{Z.EL KHADIRI} & \bf{Professor, Faculty of Applied Sciences, Ait Melloul}\\
+   \bf{\hspace{-3mm}Co-Supervisor}  & \bf{K.SAGHIRI} & \bf{SiliconeSignal Technologies, Meknes}
+\end{tabular}
+\end{center}
+
+\vskip1.5cm
+{\small Academic Year: \textbf{2025--2026}}
+
+\vspace*{\fill}
+\end{titlepage}
+\thispagestyle{empty}
+
+% ----------------------------------------------------------
+% PRELIMINARY PAGES
+% ----------------------------------------------------------
+\frontmatter
+
+\include{abstract}           % Resume / Abstract / Arabic summary
+
+\include{remerciements}      % Acknowledgements
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{acronymes}          % List of abbreviations
+
+% ----------------------------------------------------------
+% MAIN BODY
+% ----------------------------------------------------------
+\mainmatter
+
+\include{intro}              % General Introduction
+
+\include{chapter1}           % Ch. 1 --- Project Context and Hardware Environment
+
+\include{chapter2}           % Ch. 2 --- State of the Art
+
+\include{chapter4}           % Ch. 3 --- Baseline Quantization Strategy and PTQ Pipeline
+
+\include{chapter5}           % Ch. 4 --- Embedded Deployment on the ESP32-S3
+
+\include{chapter6}           % Ch. 5 --- Audio Preprocessing Pipeline
+
+\include{chapter7}           % Ch. 6 --- Model Retraining: Track B
+
+\include{conclusion}         % General Conclusion and Perspectives
+
+% ----------------------------------------------------------
+% BIBLIOGRAPHY
+% ----------------------------------------------------------
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+% ----------------------------------------------------------
+% APPENDICES  (kept in \mainmatter so chapters are lettered A, B …)
+% ----------------------------------------------------------
+\appendix
+\include{annexes}
+
+\end{document}
