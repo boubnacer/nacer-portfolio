@@ -156,7 +156,7 @@ export const timelineElements = [
     descreption:
       "Analysis of NRF24L01+ transceiver performance and security vulnerabilities. Investigated 2.4GHz ISM band challenges, implemented jamming attacks and eavesdropping techniques. Evaluated countermeasures including software encryption and frequency hopping.",
     buttonText: "View on Google Drive",
-    date: "2025 - Present",
+    date: "November 8, 2025 - February 2, 2026",
     icon: "work",
   },
   {
