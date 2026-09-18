@@ -166,7 +166,7 @@ export const timelineElements = [
     descreption:
       "Edge computing architecture for real-time medical monitoring. ESP32 captures vitals (SpO2, BPM, Temperature) and activity data, processed locally on Raspberry Pi gateway with MQTT, Node-RED, InfluxDB, and Grafana for low-latency healthcare analytics.",
     buttonText: "View Project",
-    date: "November 21, 2025 - Present",
+    date: "October 31, 2025 - February 20, 2026",
     icon: "work",
   },
   {
