@@ -26,8 +26,8 @@ const About = () => {
             <p>
               I'm Nacer, an Embedded AI Engineer holding a Master's degree in Embedded Artificial
               Intelligence from Université Ibn Zohr. I specialize in IoT systems, embedded programming
-              with ESP32, and AI/ML/DL applications using TensorFlow. I hold a Professional License in
-              Embedded Computer Systems.
+              with ESP32, and AI/ML/DL applications using TensorFlow. I hold a Professional Bachelor's
+              Degree in Embedded Computer Systems.
             </p>
             <p>
               For my end-of-studies project at SiliconeSignal Technologies, I designed and deployed a

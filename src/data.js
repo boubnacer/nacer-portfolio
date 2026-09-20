@@ -241,10 +241,10 @@ export const timelineElements = [
   },
   {
     id: 8,
-    title: "Professional License in Embedded Computer Systems",
+    title: "Professional Bachelor's Degree in Embedded Computer Systems",
     location: "Université Ibn Zohr",
     descreption:
-      "Professional License in Embedded Computer Systems",
+      "Professional Bachelor's Degree in Embedded Computer Systems",
     buttonText: "View Academic Projects",
     date: "2018 - 2021",
     icon: "school",
