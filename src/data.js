@@ -183,10 +183,10 @@ export const timelineElements = [
   },
   {
     id: 3,
-    title: "IoT Health Monitoring System",
-    location: "IoT and Sensor Technologies",
+    title: "An Enhanced IoT-Based Healthcare Monitoring System for Obese Adults",
+    location: "IoT and Sensor Technologies — Paper accepted at ICACTCE 2026",
     descreption:
-      "Embedded solution for vital parameters tracking using ESP32 and biometric sensors. Secure data transmission to cloud dashboard.",
+      "Research paper accepted at ICACTCE 2026 (Paper ID 97, Springer proceedings format). Authors: Nacer Boubkraoui, Lahcen Atti, Mouhamed Dib. Presents an IoT healthcare monitoring prototype for obese adults combining a DS18B20 temperature probe, a MAX30102 pulse-oximeter/heart-rate sensor and a dual-core ESP32, behind a patient-authenticated on-device menu. Telemetry is published over MQTT to a ThingsBoard dashboard, improving ambient-temperature accuracy (±0.1°C vs. ±0.75°C), replacing a separate 8-bit microcontroller + Wi-Fi module with a single ESP32, and moving from a paid proprietary cloud to an open-source one. Also describes a companion multiplatform mobile app concept for multi-patient dashboards and threshold-based alerting. Keywords: IoT, Healthcare monitoring, Obesity, ESP32, MQTT, ThingsBoard.",
     buttonText: "View Project",
     link: "https://www.linkedin.com/posts/nacer-boubkraoui_phase-1-of-an-iot-solution-for-obesity-care-activity-7314704870870056961-xjxV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADRTvdQBCHEvu3DCBl31BMEAXxdB7F0snOs",
     linkText: "View on LinkedIn",
